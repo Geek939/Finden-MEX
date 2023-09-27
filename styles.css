@@ -19,6 +19,12 @@
     box-sizing: border-box;  
 }
 
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+
 
 
 
@@ -61,7 +67,11 @@
             text-align: center;
             color: White;
             padding: 4em;
+<<<<<<< HEAD
             background: rgba(0, 0, 0, .6);
+=======
+           
+>>>>>>> c4463b2 (se introdujo formAnclado)
         }
     }
     .arrow {
@@ -84,6 +94,7 @@
     }
 }
 
+<<<<<<< HEAD
 h1 {
     font-size: 5em;
     margin-bottom: 0.1em;
@@ -95,6 +106,36 @@ h1 {
     
 }
 
+=======
+.text{
+    width: 23rem;
+    text-align: center;
+    
+}
+
+h1 {
+    font-family: 'AlbertSans-Bold';
+    color: #53A490;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 2.1rem; 
+    margin-bottom: 0.5rem; 
+}
+
+h2{
+    color: #28282B;
+    font-family: 'AlbertSans-Bold';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 1.4rem; 
+    
+  
+}
+
+>>>>>>> c4463b2 (se introdujo formAnclado)
 
 p {
     width: 60vw;
@@ -158,4 +199,149 @@ body {
     font-size: 12px;
 }
 
+<<<<<<< HEAD
 /* EFECTO COVER ##################################*/
+=======
+/* EFECTO COVER ##################################*/
+
+@media screen and (min-width: 768px) {
+    /* para dispositivos grandes */
+
+    .creditosBt{
+   
+    text-align: center;
+    font-family: 'AlbertSans-Ligth';
+    font-size: 1rem;
+    width: 3.9375rem; 
+    height: 1.1875rem; 
+    top: 2.8125rem; 
+    left: 66.9375rem; 
+
+    position: relative;
+    font-weight: 300;
+    line-height: 1.1875rem;
+    letter-spacing: 0em;
+    }
+
+    .text{
+        width: 56.1875rem;
+      
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    h2{
+        font-size: 2.625rem;
+    }
+
+    .formAnclado {
+        display: none;
+       
+    }
+    
+  }
+
+  header{
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    align-items: flex-start; /* Alinea los elementos hacia arriba */
+    padding: 10px; /* Agrega espaciado si es necesario */
+   
+
+}
+
+  
+
+
+.creditosBt{           /*modificar version Pantallas grandes */
+color: #28282B;
+text-align: center;
+font-family: 'AlbertSans-Light';
+color: #28282B;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+position: relative;
+width: 48px;
+height: 14px;
+top: 28px;
+left: 352px;
+line-height: 14px;
+letter-spacing: 0em;
+text-decoration: none;
+
+
+}
+
+.formBt{
+width: 14.375rem;
+height: 2.5rem;
+flex-shrink: 0;
+
+top: 35px;
+left: 1170px;
+
+border-radius: 1.25rem;
+background: #53A490;
+
+}
+
+
+.formLink{
+text-decoration: none;
+color: #FFFFFF;
+text-align: right;
+font-family:'AlbertSans-Bold';
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+width: 167px;
+height: 17px;
+top: 46px;
+left: 1192px;
+
+}
+
+
+/*CTA ANCLADO*    */
+.formAnclado {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4.375rem;
+    background: #53A490;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+   
+}
+
+.formLinkAnclado{
+    color: #FFF;
+    text-align: right;
+    font-family: 'AlbertSans-Bold';
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.formAncladoArrow{
+    width: 1.16531rem;
+    height: 0.98188rem;
+    flex-shrink: 0;
+    fill: #FFF;
+}
+/* CTA ANCLADO  */ 
+>>>>>>> c4463b2 (se introdujo formAnclado)

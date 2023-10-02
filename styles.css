@@ -94,7 +94,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: 60%;
+    
   }
 
 
@@ -106,10 +106,13 @@ section{
   }
 
   .textImg2 {
-    margin-top: 70%;
+    position: absolute;
+    bottom: -30%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 131px;
     height: 40px;
-    flex-shrink: 0;
+  
   }
   
 
@@ -294,23 +297,22 @@ line-height: normal;
       gap: 2rem;
   }
 
-    .contentText{
-    margin-top: 100%;
-    }
+    
 
     .textImg{
     width: 27.5rem;
     height: 6.217375rem;
-    padding: 0.005px 0px 0.002px 0px;
-    flex-shrink: 0;
     }
 
-    .textImg2{
-      width: 27.5rem;
-      height: 6.217375rem;
-      padding: 0.005px 0px 0.002px 0px;
-      flex-shrink: 0;
-      }
+    .textImg2 {
+      position: absolute;
+      bottom: 0%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 131px;
+      height: 40px;
+    
+    }
 
     
 
@@ -394,7 +396,7 @@ line-height: normal;
 
     .text{
         width: 56.1875rem;
-      
+        margin-bottom: 20%; 
     }
 
     h1{

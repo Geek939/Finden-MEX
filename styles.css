@@ -262,7 +262,7 @@ display: none;
 /* CTA ANCLADO  */ 
 
 
-.descripcion{
+.description{
 color: #28282B;
 font-family: 'AlbertSans-Bold';
 font-size: 2.75rem;
@@ -278,7 +278,7 @@ left: 31px;
 
 }
 
-.descripcion span{
+.description span{
 color: #53A490;
 font-family: 'AlbertSans-Bold';
 font-size: 2.75rem;

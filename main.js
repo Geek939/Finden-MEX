@@ -1,17 +1,23 @@
 /* Efecto COVER  #####################*/
 
-(function () {
-    $(window).scroll(function () { 
-        var Num = $(window).scrollTop() / 500;
-        var Num2 = $(window).scrollTop() * .0004; // higher number for more zoom
-        var Num2mod = Num2 + 1;
-        var Num3 = $(window).scrollTop() * .2; // Title speed
-        var Num3mod = Num3 + 1;
-        return $('.shade').css('opacity', Num),
-        $(".bg").css({"transform":"scale(" + Num2mod + ")"}),
-        $(".text").css({"margin-top":"-" + Num3mod + "px"});
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+      var scrollPosition = window.pageYOffset;
+      var shadeOpacity = scrollPosition / 500;
+      var scaleAmount = 1 + scrollPosition * 0.0004;
+      var marginTop = -scrollPosition * 0.2 + 1;
+  
+      // Actualizar la opacidad de la sombra
+      document.querySelector(".shade").style.opacity = shadeOpacity;
+  
+      // Actualizar la escala de la imagen de fondo
+      document.querySelector(".bg").style.transform = "scale(" + scaleAmount + ")";
+  
+      // Actualizar el margen superior del texto
+      document.querySelector(".text").style.marginTop = marginTop + "px";
     });
-}.call(this));
+  });
+  
 
 /* Efecto COVER  ##################  */
 

@@ -162,9 +162,6 @@ section{
 
   .content {
     background: white;
-    height: 100%;
-    width: 100%;
-    
   }
   
   /* Your custom styles for p inside .content go here */
@@ -267,7 +264,7 @@ display: none;
 .description{
 color: #28282B;
 font-family: 'AlbertSans-Bold';
-font-size: 2.75rem;
+font-size: 2.5rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -278,12 +275,13 @@ height: 371px;
 top: 62rem;
 left: 31px;
 padding-top: 6rem;
+
 }
 
 .description span{
 color: #53A490;
 font-family: 'AlbertSans-Bold';
-font-size: 2.75rem;
+font-size: 2.5rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;

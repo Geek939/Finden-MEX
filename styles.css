@@ -161,8 +161,10 @@ section{
 
 
   .content {
-    background: #cdcdcd;
-    padding: 150px 50px;
+    background: white;
+    height: 100%;
+    width: 100%;
+    
   }
   
   /* Your custom styles for p inside .content go here */
@@ -270,12 +272,12 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 width: 23.0625rem;
-
+padding: 1.5rem;
 width: 369px;
 height: 371px;
-top: 992px;
+top: 62rem;
 left: 31px;
-
+padding-top: 6rem;
 }
 
 .description span{
@@ -286,6 +288,42 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+
+/* Efecto de entrada de texto */
+.description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+/*Efecto de entrada de texto */
+
+/*Imagenes para efecto revelado*/
+.imgRevealed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ margin-top: 11rem;
+ padding: 1rem 1rem;
+}
+
+.imgRevealed img {
+  width: 10.625rem;
+height: 10.625rem;
+flex-shrink: 0;
+  margin: 5px; /* Espacio entre las imágenes */
+  opacity: 0; /* Inicialmente, las imágenes están ocultas */
+  transition: opacity 0.5s; /* Agrega una transición de fade-in */
+}
+
+.imgRevealed img.in-viewport {
+  opacity: 1;
+}
+
+.imgRevealed img:nth-child(2) {
+  margin-left: auto; /* Mover la segunda imagen a la derecha */
+}
+
 
 
 
@@ -414,4 +452,57 @@ line-height: normal;
        
     }
     
+    .content {
+      display: flex;
+      align-items: start;
+      flex-direction: row;
+      height: 100%;
+      
+     
+    }
+    
+    .description {
+     
+        color: #28282B;
+        font-family: 'AlbertSans-Bold';
+        font-size: 3rem;
+        width: 34.6875rem;
+        height: 371px;
+        align-items: center;
+        line-height: normal;
+        
+       
+    }
+.descriptionContent{
+  width: 34.6875rem;
+  padding-left: 10%;
+  padding-top: 3%;
+  
+}
+
+
+    .description span{
+      font-size: 3.625rem;
+
+    }
+    
+    .imgRevealed {
+      flex: 1; /* Ocupa el espacio restante */
+      display: flex;
+      align-items: start;
+      margin-left: 20%;
+      margin-top: 2%;
+      
+    }
+    
+    .imgRevealed img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .imgRevealed img:nth-child(2) {
+      margin-left: 25%;
+    }
+    
+
   }

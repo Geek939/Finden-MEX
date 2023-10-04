@@ -325,9 +325,17 @@ line-height: normal;
 
 .imgRevealed > div:nth-child(2) {
  
-  height: 15.6885rem;
+  height: 10.625rem;
   flex-shrink: 0;
   width: 100%;
+}
+
+.imgRevealed > div:nth-child(3) {
+ 
+  height: 10.625rem;
+  flex-shrink: 0;
+  width: 100%;
+  margin-bottom: 7%;
 }
 
 
@@ -368,11 +376,19 @@ line-height: normal;
 .img3{
   width: 10.625rem;
   height: 10.625rem;
-  position: relative;
+  position: absolute;
+  
 }
 
 .chilContainer3{
-  
+  position: relative;
+  background-color: white;
+  width: 3.125rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+  top: 9.4rem;
+  right: 1rem;
+  border-radius: 50%;
 }
 
 
@@ -505,7 +521,7 @@ line-height: normal;
       display: flex;
       align-items: start;
       flex-direction: row;
-      height: 100%;
+      
       
      
     }
@@ -525,7 +541,7 @@ line-height: normal;
 .descriptionContent{
   width: 34.6875rem;
   padding-left: 10%;
-  padding-top: 3%;
+  padding-top: 10%;
   
 }
 
@@ -552,6 +568,101 @@ line-height: normal;
     .imgRevealed img:nth-child(2) {
       margin-left: 25%;
     }
+
+    .img1{
+      width: 14.375rem;
+      height: 14.375rem;
+      flex-shrink: 0;
+    }
     
+    
+    .img2{
+      width: 14.375rem;
+      height: 14.375rem;
+      flex-shrink: 0;
+    }
+
+    .childContainer2{
+      position: relative;
+      background-color: white;
+      width: 3.125rem;
+      height: 3.125rem;
+      flex-shrink: 0;
+      margin-left: 25rem;
+      bottom: 1.5rem;
+      border-radius: 50%; 
+    }
+    
+    
+    .img3{
+      width: 14.375rem;
+      height: 14.375rem;
+      flex-shrink: 0;
+    }
+
+    .chilContainer3{
+      position: relative;
+      background-color: white;
+      width: 4.375rem;
+      height: 4.375rem;
+      flex-shrink: 0;
+      top: 12rem;
+      right: 1rem;
+      border-radius: 50%;
+    }
+
+
+
+
+    /*Imagenes para efecto revelado*/
+.imgRevealed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 9rem;
+  margin-bottom: 5rem;
+  padding: 1rem 1rem;
+
+}
+
+.imgRevealed div {
+  display: flex; /* Cambiar la dirección de flexbox para las imágenes internas */
+  flex-direction: row; /* Alinear las imágenes internas horizontalmente */
+}
+
+.imgRevealed img{
+  flex-shrink: 0;
+  margin: 2px; /* Espacio entre las imágenes */
+  opacity: 0; /* Inicialmente, las imágenes están ocultas */
+  transition: opacity 0.5s; /* Agrega una transición de fade-in */
+}
+
+.imgRevealed img.in-viewport {
+  opacity: 1;
+}
+
+
+.imgRevealed > div:nth-child(2) {
+ 
+  height: 10.625rem;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.imgRevealed > div:nth-child(3) {
+ 
+  height: 10.625rem;
+  flex-shrink: 0;
+  width: 100%;
+  padding-top: 6.7%;
+  
+}
+
+
+.imgRevealed > div:nth-child(2) > img.img2 {
+ 
+  margin-left: 12.3%;
+}
+
 
   }

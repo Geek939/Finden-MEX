@@ -566,6 +566,17 @@ header {
  
 }
 
+main{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  padding-top: 5%;
+  
+  
+}
+
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
   /* para dispositivos grandes */
@@ -902,4 +913,18 @@ header {
 
 
 
+#section3{
+width:100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 52em;
+}
+
+
+#section4{
+  background-color: black;
+  
+}
 }

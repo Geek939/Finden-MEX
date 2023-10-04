@@ -80,8 +80,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*Revelado de imagenes  */ 
 
-/*Linea Verde*/
+/*animacion background section*/
 
-
-
-/*Linea Verde */

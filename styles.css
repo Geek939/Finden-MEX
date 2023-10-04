@@ -164,8 +164,12 @@ h1 {
 
 .content {
   background: white;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  position: relative;
 }
 
 /* Your custom styles for p inside .content go here */
@@ -315,14 +319,10 @@ header {
 
 /*Imagenes para efecto revelado*/
 .imgRevealed {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 4em;
-
+ 
+  margin-top: 2em;
+  padding-right: 9.5em;
+  padding-bottom: 6em;
 
 }
 
@@ -353,6 +353,7 @@ header {
   height: 10.625em;
   flex-shrink: 0;
   width: 100%;
+  position: relative;
 
 }
 
@@ -368,12 +369,9 @@ header {
 
 .imgRevealed>div:nth-child(2)>img.img2 {
 
-  margin-left: 42%;
+  position: absolute;
+  transform: translate(9.6em);
 }
-
-
-
-
 
 
 .img1 {
@@ -391,13 +389,12 @@ header {
 }
 
 .childContainer2 {
-  position: relative;
+  position: absolute;
   background-color: white;
   width: 1.875em;
   height: 1.875em;
-  margin-left: auto;
-  bottom: 0.625em;
   border-radius: 50%;
+  transform: translate(17em,-0.7em);
 
 
 }
@@ -618,7 +615,7 @@ header {
     width: 2.7em;
     height: 2.7em;
     border-radius: 50%;
-    transform: translate(16.5em,-8.5em);
+    transform: translate(16.6em,-1.2em);
   }
 
 
@@ -695,7 +692,7 @@ header {
   .imgRevealed>div:nth-child(2)>img.img2 {
     position: absolute;
     
-    transform: translate(58%);
+    transform: translate(10em);
   }
 
 

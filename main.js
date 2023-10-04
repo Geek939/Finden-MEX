@@ -79,3 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
   checkImages();
 });
 /*Revelado de imagenes  */ 
+
+/*Linea Verde*/
+
+
+
+/*Linea Verde */

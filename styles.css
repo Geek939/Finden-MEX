@@ -17,17 +17,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+ 
+    
+
+  scroll-behavior: smooth;
 }
 
 section {
-  width: 100vw;
+  top: 0;
   height: 100vh;
+  position: sticky;
 }
 
 
+
+.section-1{
+  background-color: white;
+}
 /* EFECTO COVER ##################################*/
 
-/* Basic styles for the hero section */
+
 .hero-effects {
   height: 100vh;
   position: relative;
@@ -170,6 +184,7 @@ h1 {
   justify-content: center;
   width: 100%;
   position: relative;
+ 
 }
 
 
@@ -282,6 +297,9 @@ header {
 
 /* CTA ANCLADO  */
 
+.section-2{
+  background-color: white;
+}
 
 .description {
   color: #28282B;
@@ -321,9 +339,9 @@ header {
 /*Imagenes para efecto revelado*/
 .imgRevealed {
  
-  margin-top: 2em;
+  margin-top: 0.5em;
   padding-right: 9.5em;
-  padding-bottom: 6em;
+  padding-bottom: 4em;
 
 }
 
@@ -432,21 +450,109 @@ header {
 }
 
 
-.content2{
-  background: red;
+.linea-verde {
+  position: relative;
+  width: 100%; 
+  height: 2.5px; 
+  background-color: transparent; 
+  overflow: hidden;
+}
+
+.linea-verde::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; 
+  height: 100%;
+  background-color: #53A490;;
+  animation: crecimiento 2s linear; 
+}
+
+@keyframes crecimiento {
+  0% {
+    width: 0; 
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.linea-verde:hover::before {
+  animation: none; 
+  width: 100%; 
+}
+
+
+.section-3{
+  background-color: white;
+  
+  padding-top: 0.5em;
+}
+
+.section-3Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 6em;
+
 }
 
 .info{
   background-color: white;
-  width: 100%;
-  height: auto;
-}
-
-.info p{
-  color: blue;
+  width: 370px;
+  height: 164px;
+  text-align: justify;
+  padding-top: 3em;
   
 }
 
+.info p{
+  
+  color: #28282B;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.colorB{
+  color: #28282B;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.color{
+  color: #53A490;
+  
+}
+
+.degrade{
+  color: #54535A;
+  font-weight: lighter;
+  font-family: 'AlbertSans-Light';
+}
+
+.dots{
+  width: 23.125rem;
+  height: 23.125rem;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.pib{
+  width: 19.125rem;
+  height: 19.125rem;
+  position: absolute;
+  transform: translate(-21em);
+ 
+}
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
@@ -665,28 +771,20 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3%;
-    margin-bottom: 2%;
-    padding: 1em 1em;
-   
-
+    margin-top: 5%;
   }
 
   .imgRevealed div {
     display: flex;
-    /* Cambiar la dirección de flexbox para las imágenes internas */
     flex-direction: row;
-    /* Alinear las imágenes internas horizontalmente */
+ 
   }
 
   .imgRevealed img {
     flex-shrink: 0;
     margin: 2px;
-    /* Espacio entre las imágenes */
     opacity: 0;
-    /* Inicialmente, las imágenes están ocultas */
     transition: opacity 0.5s;
-    /* Agrega una transición de fade-in */
   }
 
   .imgRevealed img.in-viewport {
@@ -721,12 +819,14 @@ header {
   .content {
     background-color: white;
     position: relative;
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: center;
+    margin-bottom: 4em;
+    
+    
    
   }
 

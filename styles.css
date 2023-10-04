@@ -23,8 +23,6 @@
 body {
   font-family: Arial, sans-serif;
  
-    
-
   scroll-behavior: smooth;
 }
 
@@ -32,6 +30,7 @@ section {
   top: 0;
   height: 100vh;
   position: sticky;
+
 }
 
 
@@ -483,7 +482,10 @@ header {
   width: 100%; 
 }
 
+/*   */
 
+
+/*   */
 .section-3{
   background-color: white;
   
@@ -568,13 +570,82 @@ header {
 
 main{
   display: flex;
+  flex-direction: column;
   gap: 2em;
   justify-content: center;
   background-color: white;
   align-items: center;
   padding-top: 5%;
+  overflow-x: hidden;
   
   
+}
+
+#section4{
+  background-color: #28282B;
+  width: 100%;
+  padding-top: 9em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
+  gap: 2em;
+  padding-bottom: 6em;
+
+}
+
+
+
+.dots2{
+  width: 20em;
+  height: 20em;
+  position: relative;
+}
+
+.pymes{
+  width: 17em;
+  height: 17em;
+  position: absolute;
+  transform: translate(-19em);
+}
+
+.info2{
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: justify;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+
+.color2{
+  color: #FFFFFF;
+  font-family: 'AlbertSans-Light';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+.info2 p{
+  color: #FFFFFF;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+}
+
+.greenColor{
+  color: #53A490;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /*  Media Query Pantallas Grandes  */

@@ -1,142 +1,144 @@
 @font-face {
-    font-family: 'AlbertSans-Bold';
-    src: url('./fonts/AlbertSans-Bold.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'AlbertSans-Light';
-    src: url('./fonts/AlbertSans-Light.ttf') format('truetype');
-  }
-  
-
-:root {
-    --heroHeight: 100vh;
-  }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
+  font-family: 'AlbertSans-Bold';
+  src: url('./fonts/AlbertSans-Bold.ttf') format('truetype');
 }
 
-section{
-    width: 100vw;
-    height: 100vh;
+@font-face {
+  font-family: 'AlbertSans-Light';
+  src: url('./fonts/AlbertSans-Light.ttf') format('truetype');
+}
+
+
+:root {
+  --heroHeight: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
 }
 
 
 /* EFECTO COVER ##################################*/
-  
-  /* Basic styles for the hero section */
-  .hero-effects {
-    height: 100vh;
-    position: relative;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  }
-  
-  .bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.6); /* Define la opacidad aquí */
-    z-index: 2; /* Asegura que esté detrás de .bg */
-  }
 
-
-  .bg {
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    background-image: url('./imgs/finden-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    transform: scale(1);
-  }
-
-  
-  .shade {
-    opacity: 0;
-    background: rgba(0, 0, 0, .8);
-    z-index: 3;
-    height: 100%;
-    position: fixed;
-    width: 100%;
-  }
-  
-  .title {
-    width: 100%;
-  }
-  
-  .text {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 23rem;
-    text-align: center;
-    color: white;
-    padding: 4em;
-    text-align: center;
-    margin-bottom: 50%;
-  }
-
-  .contentText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    
-  }
-
-
-
-  .textImg{
-    width: 100%;
-   
-    
-  }
-
-  .textImg2 {
-    position: absolute;
-    bottom: -30%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 131px;
-    height: 40px;
-  
-  }
-  
-
-  .arrow {
-    position: fixed;
-    left: 50%;
-    margin-left: -20px;
-    bottom: 0;
-    width: 40px;
-    height: 40px;
-    opacity: 1;
+/* Basic styles for the hero section */
+.hero-effects {
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
-  
-  .centerV {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  
-  /* Your custom styles for h1 and p go here */
-  h1{
-   
+
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  /* Define la opacidad aquí */
+  z-index: 2;
+  /* Asegura que esté detrás de .bg */
+}
+
+
+.bg {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  background-image: url('./imgs/finden-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(1);
+}
+
+
+.shade {
+  opacity: 0;
+  background: rgba(0, 0, 0, .8);
+  z-index: 3;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+}
+
+.text {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 23rem;
+  text-align: center;
+  color: white;
+  padding: 4em;
+  text-align: center;
+  margin-bottom: 50%;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+
+
+.textImg {
+  width: 100%;
+
+
+}
+
+.textImg2 {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 131px;
+  height: 40px;
+
+}
+
+
+.arrow {
+  position: fixed;
+  left: 50%;
+  margin-left: -20px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+
+.centerV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+/* Your custom styles for h1 and p go here */
+h1 {
+
   color: #53A490;
   text-align: center;
   font-family: 'AlbertSans-Bold';
@@ -144,149 +146,162 @@ section{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  
-  }
+
+}
 
 
-  .text p{
+.text p {
 
-    color: #28282B;
-    font-family: 'AlbertSans-Bold';
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-size: 1.253rem; 
-    
-  }
+  color: #28282B;
+  font-family: 'AlbertSans-Bold';
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 1.253rem;
+
+}
 
 
-  .content {
-    background: white;
-    
-    width: 100%;
+.content {
+  background: white;
+
+  width: 100%;
+}
+
+/* Your custom styles for p inside .content go here */
+
+.bouncy {
+  animation: bounce 3s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  /* Your custom styles for p inside .content go here */
-  
-  .bouncy {
-    animation: bounce 3s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  40% {
+    transform: translateY(-25px);
   }
-  
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-25px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
+
+  60% {
+    transform: translateY(-15px);
   }
-  
+}
+
 /* EFECTO COVER ##################################*/
 
 
 
-  header{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    align-items: flex-start; /* Alinea los elementos hacia arriba */
-    padding: 1.25rem;
-    z-index: 3;
-    position: relative;   
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* Alinea los elementos a la derecha */
+  align-items: flex-start;
+  /* Alinea los elementos hacia arriba */
+  padding: 1.25rem;
+  z-index: 3;
+  position: relative;
 }
 
-.creditosBt{           /*modificar version Pantallas grandes */
-color: #28282B;
-text-align: center;
-font-family: 'AlbertSans-Light';
-font-size: 0.75rem;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-width: 48px;
-height: 14px;
-line-height: 14px;
-letter-spacing: 0em;
-text-decoration: none;
+.creditosBt {
+  /*modificar version Pantallas grandes */
+  color: #28282B;
+  text-align: center;
+  font-family: 'AlbertSans-Light';
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 48px;
+  height: 14px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-decoration: none;
 
 
 }
+
 /* Boton superior: "Cuentanos de tu empresa" */
-.formBt{
-display: none;
+.formBt {
+  display: none;
 }
 
 
-.formLink{
-display: none;
+.formLink {
+  display: none;
 }
-/*  ######################################   */ 
+
+/*  ######################################   */
 
 /*CTA ANCLADO*    */
 .formAnclado {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4.375rem;
-    background: #53A490;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 1rem;
-    
-   
-}
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4.375rem;
+  background: #53A490;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
-.formLinkAnclado{
-    color: #FFF;
-    text-align: right;
-    font-family: 'AlbertSans-Bold';
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    
-}
-
-.formAncladoArrow{
-    width: 1.16531rem;
-    height: 0.98188rem;
-    flex-shrink: 0;
-    fill: #FFF;
-}
-/* CTA ANCLADO  */ 
-
-
-.description{
-color: #28282B;
-font-family: 'AlbertSans-Bold';
-font-size: 2.0999rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-width: 23.0625em;
-padding: 1.5em;
-width: 369px;
-height: 371px;
-top: 62em;
-left: 1.9375em;
-padding-top: 1em;
 
 }
 
-.description span{
-color: #53A490;
-font-family: 'AlbertSans-Bold';
-font-size: 2.0999rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.formLinkAnclado {
+  color: #FFF;
+  text-align: right;
+  font-family: 'AlbertSans-Bold';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.formAncladoArrow {
+  width: 1.16531rem;
+  height: 0.98188rem;
+  flex-shrink: 0;
+  fill: #FFF;
+}
+
+/* CTA ANCLADO  */
+
+
+.description {
+  color: #28282B;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.0999rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 23.0625em;
+  padding: 1.5em;
+  width: 369px;
+  height: 371px;
+  top: 62em;
+  left: 1.9375em;
+  padding-top: 1em;
+
+}
+
+.description span {
+  color: #53A490;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.0999rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* Efecto de entrada de texto */
@@ -307,20 +322,25 @@ line-height: normal;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 4em;
-  
+
 
 }
 
 .imgRevealed div {
-  display: flex; /* Cambiar la dirección de flexbox para las imágenes internas */
-  flex-direction: row; /* Alinear las imágenes internas horizontalmente */
+  display: flex;
+  /* Cambiar la dirección de flexbox para las imágenes internas */
+  flex-direction: row;
+  /* Alinear las imágenes internas horizontalmente */
 }
 
-.imgRevealed img{
+.imgRevealed img {
   flex-shrink: 0;
-  margin: 0.300em; /* Espacio entre las imágenes */
-  opacity: 0; /* Inicialmente, las imágenes están ocultas */
-  transition: opacity 0.5s; /* Agrega una transición de fade-in */
+  margin: 0.300em;
+  /* Espacio entre las imágenes */
+  opacity: 0;
+  /* Inicialmente, las imágenes están ocultas */
+  transition: opacity 0.5s;
+  /* Agrega una transición de fade-in */
 }
 
 .imgRevealed img.in-viewport {
@@ -328,26 +348,26 @@ line-height: normal;
 }
 
 
-.imgRevealed > div:nth-child(2) {
- 
+.imgRevealed>div:nth-child(2) {
+
   height: 10.625em;
   flex-shrink: 0;
   width: 100%;
-  
+
 }
 
-.imgRevealed > div:nth-child(3) {
- 
+.imgRevealed>div:nth-child(3) {
+
   height: 10.625em;
   flex-shrink: 0;
   width: 100%;
-  
- 
+
+
 }
 
 
-.imgRevealed > div:nth-child(2) > img.img2 {
- 
+.imgRevealed>div:nth-child(2)>img.img2 {
+
   margin-left: 42%;
 }
 
@@ -356,21 +376,21 @@ line-height: normal;
 
 
 
-.img1{
+.img1 {
   width: 9.5em;
   height: 9.5em;
 }
 
 
-.img2{
+.img2 {
   width: 9.5em;
   height: 9.5em;
   position: absolute;
-  
+
 
 }
 
-.childContainer2{
+.childContainer2 {
   position: relative;
   background-color: white;
   width: 1.875em;
@@ -378,19 +398,19 @@ line-height: normal;
   margin-left: auto;
   bottom: 0.625em;
   border-radius: 50%;
-  
-  
+
+
 }
 
-.img3{
+.img3 {
   width: 9.5em;
   height: 9.5em;
   position: absolute;
-  
-  
+
+
 }
 
-.chilContainer3{
+.chilContainer3 {
   position: relative;
   background-color: white;
   width: 3.125rem;
@@ -404,284 +424,293 @@ line-height: normal;
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
-    /* para dispositivos grandes */
-    
-    header{
-      gap: 2rem;
+  /* para dispositivos grandes */
+
+  header {
+    gap: 2rem;
   }
 
-    
 
-    .textImg{
+
+  .textImg {
     width: 27.5rem;
     height: 6.217375rem;
-    }
+  }
 
-    .textImg2 {
-      position: absolute;
-      bottom: 0%; 
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 131px;
-      height: 40px;
-    
-    }
+  .textImg2 {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 131px;
+    height: 40px;
 
-    
-
-    /* Boton superior: "Cuentanos de tu empresa" */
-    .formBt{
-        width: 14.375rem;
-        height: 2.5rem;
-        flex-shrink: 0;
-        top: 35px;
-        left: 1170px;  
-        border-radius: 1.25rem;
-        background: #53A490;
-        display: block;
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        }
-
-        .formBt2{
-          width: 14.375rem;
-          height: 2.5rem;
-          flex-shrink: 0;
-          top: 35px;
-          left: 1170px;  
-          border-radius: 1.25rem;
-          background: #53A490;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 2rem;
-          }
-
-        
-        
-        .formLink{
-        text-decoration: none;
-        color: #FFFFFF;
-        font-family:'AlbertSans-Bold';
-        font-size: 0.875rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        width: 167px;
-        height: 17px;
-        display: block;
-       
-       }
-
-        
-       
-        /* ############################### */
+  }
 
 
-    .creditosBt{
+
+  /* Boton superior: "Cuentanos de tu empresa" */
+  .formBt {
+    width: 14.375rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    top: 35px;
+    left: 1170px;
+    border-radius: 1.25rem;
+    background: #53A490;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formBt2 {
+    width: 14.375rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    top: 35px;
+    left: 1170px;
+    border-radius: 1.25rem;
+    background: #53A490;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+
+
+
+  .formLink {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'AlbertSans-Bold';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 167px;
+    height: 17px;
+    display: block;
+
+  }
+
+
+
+  /* ############################### */
+
+
+  .creditosBt {
     text-align: center;
     font-family: 'AlbertSans-Ligth';
     font-size: 1rem;
-    width: 3.9375rem; 
-    height: 1.1875rem; 
+    width: 3.9375rem;
+    height: 1.1875rem;
     font-weight: 300;
     line-height: 1.1875rem;
     letter-spacing: 0em;
-    padding-top: 1rem ;
-    }
+    padding-top: 1rem;
+  }
 
-    .formLink{
-        text-decoration: none;
-        color: #FFFFFF;
-        text-align: right;
-        font-family:'AlbertSans-Bold';
-        font-size: 0.875rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        
-        width: 167px;
-        height: 17px;
-        top: 46px;
-        left: 1192px;
-        }
+  .formLink {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: right;
+    font-family: 'AlbertSans-Bold';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 
-    .text{
-        width: 56.1875rem;
-        margin-bottom: 20%; 
-    }
+    width: 167px;
+    height: 17px;
+    top: 46px;
+    left: 1192px;
+  }
 
-    h1{
-        font-size: 3.5rem;
-        width: max-content;
-    }
+  .text {
+    width: 56.1875rem;
+    margin-bottom: 20%;
+  }
 
-    .text p{
-        font-size: 2.625rem;
-        width: max-content;
-    }
+  h1 {
+    font-size: 3.5rem;
+    width: max-content;
+  }
 
-    .formAnclado {
-        display: none;
-       
-    }
-    
-    /*
+  .text p {
+    font-size: 2.625rem;
+    width: max-content;
+  }
+
+  .formAnclado {
+    display: none;
+
+  }
+
+  /*
     .content {
       display: flex;
       align-items: start;
       flex-direction: row;
     }
     */
-    
-    .description {
-     
-        color: #28282B;
-        font-family: 'AlbertSans-Bold';
-        font-size: 2.870rem;
-        width: 554.000px;
-        height: 371px;
-        align-items: center;
-        line-height: normal;
-        
-       
-    }
-.descriptionContent{
-  width: 34.6875em;
- 
-  padding-top: 10%;
-  font-size: 1em;
-}
 
+  .description {
 
-    .description span{
-      font-size: 2.870rem;
+    color: #28282B;
+    font-family: 'AlbertSans-Bold';
+    font-size: 2.870rem;
+    width: 554.000px;
+    height: 371px;
+    align-items: center;
+    line-height: normal;
 
-    }
-    
-    .imgRevealed {
-    
-      
-      margin-left: 6%;
-    
-      
-    }
-    
-    .imgRevealed img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .imgRevealed img:nth-child(2) {
-      margin-left: 25%;
-    }
-
-    .img1{
-      width: 10em;
-      height: 10em;
-      flex-shrink: 0;
-    }
-    
-    
-    .img2{
-      width: 10em;
-      height: 10em;
-      flex-shrink: 0;
-    }
-
-    .childContainer2{
-      position: relative;
-      background-color: white;
-      width: 3.125em;
-      height: 3.125em;
-      flex-shrink: 0;
-      margin-left: 25em;
-      bottom: 1.5em;
-      border-radius: 50%; 
-    }
-    
-    
-    .img3{
-      width: 10em;
-      height: 10em;
-      flex-shrink: 0;
-    }
-
-    .chilContainer3{
-      position: relative;
-      background-color: white;
-      width: 4.375em;
-      height: 4.375em;
-      flex-shrink: 0;
-      top: 12em;
-      right: 1em;
-      border-radius: 50%;
-    }
-
-
-
-
-    /*Imagenes para efecto revelado*/
-.imgRevealed {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 9em;
-  
-  padding: 1em 1em;
-
-}
-
-.imgRevealed div {
-  display: flex; /* Cambiar la dirección de flexbox para las imágenes internas */
-  flex-direction: row; /* Alinear las imágenes internas horizontalmente */
-}
-
-.imgRevealed img{
-  flex-shrink: 0;
-  margin: 2px; /* Espacio entre las imágenes */
-  opacity: 0; /* Inicialmente, las imágenes están ocultas */
-  transition: opacity 0.5s; /* Agrega una transición de fade-in */
-}
-
-.imgRevealed img.in-viewport {
-  opacity: 1;
-}
-
-
-.imgRevealed > div:nth-child(2) {
- 
-  height: 10.625rem;
-  flex-shrink: 0;
-  width: 100%;
-}
-
-.imgRevealed > div:nth-child(3) {
- 
-  height: 10.625rem;
-  flex-shrink: 0;
-  width: 100%;
-  padding-top: 6.7%;
-  
-}
-
-
-.imgRevealed > div:nth-child(2) > img.img2 {
- 
-  margin-left: 12.3%;
-}
-
-
-.content{
-  background-color: red;
-  
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: center;
-}
 
   }
+
+  .descriptionContent {
+    width: 34.6875em;
+
+    padding-top: 10%;
+    font-size: 1em;
+  }
+
+
+  .description span {
+    font-size: 2.870rem;
+
+  }
+
+  .imgRevealed {
+
+
+    margin-left: 6%;
+
+
+  }
+
+  .imgRevealed img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .imgRevealed img:nth-child(2) {
+    margin-left: 25%;
+  }
+
+  .img1 {
+    width: 10em;
+    height: 10em;
+    flex-shrink: 0;
+  }
+
+
+  .img2 {
+    width: 10em;
+    height: 10em;
+    flex-shrink: 0;
+   
+  }
+
+  .childContainer2 {
+    position: absolute;
+    background-color: white;
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+    transform: translate(16.5em,-8.5em);
+  }
+
+
+  .img3 {
+    width: 10em;
+    height: 10em;
+    flex-shrink: 0;
+  }
+
+  .chilContainer3 {
+    position: absolute;
+    background-color: white;
+    width: 4em;
+    height: 4em;
+    flex-shrink: 0;
+    border-radius: 50%;
+    transform: translate(-7em,0.5em);
+  }
+
+
+
+
+  /*Imagenes para efecto revelado*/
+  .imgRevealed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    padding: 1em 1em;
+   
+
+  }
+
+  .imgRevealed div {
+    display: flex;
+    /* Cambiar la dirección de flexbox para las imágenes internas */
+    flex-direction: row;
+    /* Alinear las imágenes internas horizontalmente */
+  }
+
+  .imgRevealed img {
+    flex-shrink: 0;
+    margin: 2px;
+    /* Espacio entre las imágenes */
+    opacity: 0;
+    /* Inicialmente, las imágenes están ocultas */
+    transition: opacity 0.5s;
+    /* Agrega una transición de fade-in */
+  }
+
+  .imgRevealed img.in-viewport {
+    opacity: 1;
+  }
+
+
+  .imgRevealed>div:nth-child(2) {
+
+    height: 10.625rem;
+    width: 100%;
+    position: relative;
+
+  }
+
+  .imgRevealed>div:nth-child(3) {
+
+    height: 10.625rem;
+    position: relative;
+
+
+  }
+
+
+  .imgRevealed>div:nth-child(2)>img.img2 {
+    position: absolute;
+    
+    transform: translate(58%);
+  }
+
+
+  .content {
+    background-color: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+   
+  }
+
+
+
+}

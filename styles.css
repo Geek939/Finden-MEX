@@ -266,7 +266,7 @@ display: none;
 .description{
 color: #28282B;
 font-family: 'AlbertSans-Bold';
-font-size: 2.0999em;
+font-size: 2.0999rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -283,7 +283,7 @@ padding-top: 1em;
 .description span{
 color: #53A490;
 font-family: 'AlbertSans-Bold';
-font-size: 1.1em;
+font-size: 2.0999rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -527,20 +527,19 @@ line-height: normal;
        
     }
     
+    /*
     .content {
       display: flex;
       align-items: start;
       flex-direction: row;
-      
-      
-     
     }
+    */
     
     .description {
      
         color: #28282B;
         font-family: 'AlbertSans-Bold';
-        font-size: 3em;
+        font-size: 2.870rem;
         width: 554.000px;
         height: 371px;
         align-items: center;
@@ -550,22 +549,22 @@ line-height: normal;
     }
 .descriptionContent{
   width: 34.6875em;
-  padding-left: 10%;
+ 
   padding-top: 10%;
+  font-size: 1em;
 }
 
 
     .description span{
-      font-size: 3.625rem;
+      font-size: 2.870rem;
 
     }
     
     .imgRevealed {
-      flex: 1; /* Ocupa el espacio restante */
-      display: flex;
-      align-items: start;
-      margin-left: 20%;
-      margin-top: 2%;
+    
+      
+      margin-left: 6%;
+    
       
     }
     
@@ -579,44 +578,44 @@ line-height: normal;
     }
 
     .img1{
-      width: 14.375rem;
-      height: 14.375rem;
+      width: 10em;
+      height: 10em;
       flex-shrink: 0;
     }
     
     
     .img2{
-      width: 14.375rem;
-      height: 14.375rem;
+      width: 10em;
+      height: 10em;
       flex-shrink: 0;
     }
 
     .childContainer2{
       position: relative;
       background-color: white;
-      width: 3.125rem;
-      height: 3.125rem;
+      width: 3.125em;
+      height: 3.125em;
       flex-shrink: 0;
-      margin-left: 25rem;
-      bottom: 1.5rem;
+      margin-left: 25em;
+      bottom: 1.5em;
       border-radius: 50%; 
     }
     
     
     .img3{
-      width: 14.375rem;
-      height: 14.375rem;
+      width: 10em;
+      height: 10em;
       flex-shrink: 0;
     }
 
     .chilContainer3{
       position: relative;
       background-color: white;
-      width: 4.375rem;
-      height: 4.375rem;
+      width: 4.375em;
+      height: 4.375em;
       flex-shrink: 0;
-      top: 12rem;
-      right: 1rem;
+      top: 12em;
+      right: 1em;
       border-radius: 50%;
     }
 
@@ -628,9 +627,9 @@ line-height: normal;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 9rem;
-  margin-bottom: 5rem;
-  padding: 1rem 1rem;
+  margin-top: 9em;
+  
+  padding: 1em 1em;
 
 }
 
@@ -673,5 +672,16 @@ line-height: normal;
   margin-left: 12.3%;
 }
 
+
+.content{
+  background-color: red;
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
 
   }

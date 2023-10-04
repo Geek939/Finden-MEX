@@ -301,14 +301,18 @@ line-height: normal;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
- margin-top: 11rem;
- padding: 1rem 1rem;
+  margin-top: 11rem;
+  padding: 1rem 1rem;
+
 }
 
-.imgRevealed img {
-  width: 10.625rem;
-height: 10.625rem;
-flex-shrink: 0;
+.imgRevealed div {
+  display: flex; /* Cambiar la dirección de flexbox para las imágenes internas */
+  flex-direction: row; /* Alinear las imágenes internas horizontalmente */
+}
+
+.imgRevealed img{
+  flex-shrink: 0;
   margin: 5px; /* Espacio entre las imágenes */
   opacity: 0; /* Inicialmente, las imágenes están ocultas */
   transition: opacity 0.5s; /* Agrega una transición de fade-in */
@@ -318,11 +322,58 @@ flex-shrink: 0;
   opacity: 1;
 }
 
-.imgRevealed img:nth-child(2) {
-  margin-left: auto; /* Mover la segunda imagen a la derecha */
+
+.imgRevealed > div:nth-child(2) {
+ 
+  height: 15.6885rem;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 
+.imgRevealed > div:nth-child(2) > img.img2 {
+ 
+  margin-left: 48%;
+}
+
+
+
+
+
+.img1{
+  width: 10.625rem;
+  height: 10.625rem;
+}
+
+
+.img2{
+  width: 10.625rem;
+  height: 10.625rem;
+  position: absolute;
+
+}
+
+.childContainer2{
+  position: relative;
+  background-color: white;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-left: auto;
+  bottom: 0.625rem;
+  border-radius: 50%;
+  
+  
+}
+
+.img3{
+  width: 10.625rem;
+  height: 10.625rem;
+  position: relative;
+}
+
+.chilContainer3{
+  
+}
 
 
 /*  Media Query Pantallas Grandes  */

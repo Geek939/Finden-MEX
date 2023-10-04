@@ -496,6 +496,7 @@ header {
   align-items: center;
   justify-content: start;
   gap: 6em;
+  
 
 }
 
@@ -505,7 +506,8 @@ header {
   height: 164px;
   text-align: justify;
   padding-top: 3em;
-  
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .info p{
@@ -538,19 +540,23 @@ header {
   font-family: 'AlbertSans-Light';
 }
 
+.pibContainer{
+  
+  padding-top: 4em;
+  
+}
+
 .dots{
-  width: 23.125rem;
-  height: 23.125rem;
-  transform: rotate(-90deg);
-  flex-shrink: 0;
+  width: 20em;
+  height: 20em;
   position: relative;
 }
 
 .pib{
-  width: 19.125rem;
-  height: 19.125rem;
+  width: 17em;
+  height: 17em;
   position: absolute;
-  transform: translate(-21em);
+  transform: translate(-19em);
  
 }
 

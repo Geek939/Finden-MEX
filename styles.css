@@ -466,7 +466,7 @@ header {
   width: 0; 
   height: 100%;
   background-color: #53A490;;
-  animation: crecimiento 2s linear; 
+  animation: crecimiento 5s linear infinite; 
 }
 
 @keyframes crecimiento {
@@ -531,8 +531,14 @@ header {
 
 .color{
   color: #53A490;
-  
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
+
+
 
 .degrade{
   color: #54535A;
@@ -835,6 +841,64 @@ header {
     
    
   }
+
+
+
+.section-3Container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+  margin-top: 4em;
+}
+
+
+.info{
+  background-color: white;
+  width: 555px;
+  height: 164px;
+  text-align: justify;
+  padding-top: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.info p{
+  
+  color: #28282B;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.colorB{
+  color: #28282B;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.color{
+  color: #53A490;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+
+.degrade{
+  color: #54535A;
+  font-weight: lighter;
+  font-family: 'AlbertSans-Light';
+}
 
 
 

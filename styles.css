@@ -172,6 +172,7 @@ h1 {
   position: relative;
 }
 
+
 /* Your custom styles for p inside .content go here */
 
 .bouncy {
@@ -418,6 +419,34 @@ header {
   border-radius: 50%;
 }
 
+#imgVar1{
+    transition: opacity 1s; /* 0.5 segundos para la transición de opacidad */
+}
+
+#imgVar2{
+  transition: opacity 1s; /* 0.5 segundos para la transición de opacidad */
+}
+
+#imgVar3{
+  transition: opacity 1s; /* 0.5 segundos para la transición de opacidad */
+}
+
+
+.content2{
+  background: red;
+}
+
+.info{
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.info p{
+  color: blue;
+  
+}
+
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
@@ -544,13 +573,6 @@ header {
 
   }
 
-  /*
-    .content {
-      display: flex;
-      align-items: start;
-      flex-direction: row;
-    }
-    */
 
   .description {
 

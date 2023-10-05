@@ -38,9 +38,10 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 1.5rem; /* 150% */
-    text-align: center;
+    line-height: 1.5rem; 
     }
+
+    
 
   span{
     color: #54535A;
@@ -49,4 +50,41 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem;
+  }
+
+  .texto{
+
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 4em;;
+
+  }
+
+  h1{
+    color: #28282B;
+    font-family: 'AlbertSans-Bold';
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .legal{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+
+  .leyendas{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
   }

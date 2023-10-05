@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'AlbertSans-Bold';
+    src: url('./fonts/AlbertSans-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'AlbertSans-Light';
+    src: url('./fonts/AlbertSans-Light.ttf') format('truetype');
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  .navSection6{
+    opacity: 0.95;
+    background: #F6F6F7;
+  }
+
+  a{
+    color: #28282B;
+    text-align: center;
+    font-family: 'AlbertSans-Light';
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+
+    p{
+    color: #54535A;
+    font-family: 'AlbertSans-Light';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5rem; /* 150% */
+    text-align: center;
+    }
+
+  span{
+    color: #54535A;
+    font-family: 'AlbertSans-Light';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }

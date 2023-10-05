@@ -1027,8 +1027,8 @@ h4{
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 5em;
-  padding-top: 15em;
+  gap: 7em;
+  padding-top: 5em;
   justify-content: center;
   align-items: center;
 }
@@ -1071,6 +1071,7 @@ h4{
 .financiera{
   width: 115px;
   height: 35px;
+  
   
 }
 
@@ -1119,9 +1120,13 @@ text-align: center;
 
 
 .etiqueta{
+  position: absolute;
+  bottom: 2em;
   width: 6.0625rem;
   height: 2.1875rem;
   flex-shrink: 0;
+  right: 0;
+
 }
 
 

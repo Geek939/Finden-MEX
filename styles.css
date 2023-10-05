@@ -688,6 +688,7 @@ width: 100%;
   align-items: center;
   justify-content: center;
   top: 0;
+  margin-bottom: 5em;
   
 }
 
@@ -739,9 +740,9 @@ width: 100%;
 #section6{
   background-color: white;
   width: 100%;
-  overflow-y:auto;
+ 
   top: 0;
-  padding-top: 25em;
+padding-top: 50em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -771,6 +772,52 @@ h3{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.info4{
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  
+ 
+}
+
+.infoP{
+  color: #54535A;
+  font-family: 'AlbertSans-Light';
+  font-size: 1.125rem;
+  font-weight: lighter;
+  font-style: normal;
+  text-align: center;
+  
+}
+
+.pagas{
+  color: #53A490;
+  text-align: center;
+  font-family:'AlbertSans-Bold';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.capital{
+  color: #54535A;
+  text-align: center;
+  font-family:'AlbertSans-Bold';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.container4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 3em;
 }
 
 /*  Media Query Pantallas Grandes  */

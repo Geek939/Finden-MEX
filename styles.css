@@ -31,6 +31,7 @@ section {
   max-height:100vh; 
   overflow: auto; 
   
+  
 }
 
 
@@ -742,8 +743,8 @@ width: 100%;
   background-color: white;
   width: 100%;
   top: 0;
-  margin-top: 25em;
-  padding-top: 50em;
+  padding-bottom: 5em;
+  padding-top: 30em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -758,7 +759,7 @@ width: 100%;
 .creditoImg{
   width: 18em;
   height: 12em;
-  flex-shrink: 0;
+ 
 }
 
 h2{
@@ -846,6 +847,7 @@ h3{
   justify-content: center;
   gap: 2em;
   padding-top: 3em;
+ 
 }
 
 .info6{
@@ -862,12 +864,14 @@ h3{
   background-color: white;
   width: 100%;
   top: 0;
-  padding-top: 24em;
+  padding-top: 18em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+  
+ 
 }
 
 .info7{
@@ -879,6 +883,11 @@ h3{
 .container7{
 padding-left: 6em;
 padding-right: 6em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 4em;
 }
 
 .infoP3{
@@ -900,13 +909,60 @@ padding-right: 6em;
   line-height: normal;
 }
 
+
 .finloop{
   position: absolute;
-  width: 18rem;
-  height: 34rem;
-  flex-shrink: 0;
-  transform: translate(-19em);
+  width: 16rem;
+  height: 32rem;
+  transform: translate(-17.7em, 2em);
+ 
 }
+
+.containerImgs{
+  height: 25rem;
+  overflow-y: hidden;
+
+}
+
+#section8{
+  background: #EFEFEF;
+  margin-top: -12em;
+  
+  
+}
+
+
+h4{
+  color: #28282B;
+  font-family:'AlbertSans-Bold';
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h4Green{
+  color: #53A490;
+  font-family:'AlbertSans-Bold';
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info8{
+  font-size: 1.75rem;
+}
+
+.black{
+  color: #28282B;
+  text-align: center;
+  font-family:'AlbertSans-Bold';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; 
+}
+
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
@@ -1039,8 +1095,6 @@ padding-right: 6em;
     color: #28282B;
     font-family: 'AlbertSans-Bold';
     font-size: 2.870rem;
-    width: 554.000px;
-    height: 371px;
     align-items: center;
     line-height: normal;
 
@@ -1148,7 +1202,7 @@ padding-right: 6em;
 
   .imgRevealed>div:nth-child(2) {
 
-    height: 10.625rem;
+    height: 10.625em;
     width: 100%;
     position: relative;
 
@@ -1156,7 +1210,7 @@ padding-right: 6em;
 
   .imgRevealed>div:nth-child(3) {
 
-    height: 10.625rem;
+    height: 10.625em;
     position: relative;
 
 
@@ -1198,8 +1252,6 @@ padding-right: 6em;
 
 .info{
   background-color: white;
-  width: 555px;
-  height: 164px;
   text-align: justify;
   padding-top: 3em;
   padding-left: 2em;

@@ -13,12 +13,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
   }
 
-  section{
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+   
+}
+
+
+.universalContainer{
     height: 100vh;
     width: 100vw;
+
+  
   }
 
   .navSection6{
@@ -65,7 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+   
     gap: 4em;;
    
 
@@ -141,11 +151,23 @@ section{
 }
 
 .footerContainer{
-    top: 0;
+ 
      background: linear-gradient(#28282B, #1A1A1C);
      position: relative;
-     width: 100%;
-     
+ 
+     width: 100vw;
+}
+
+
+
+.bgFooter{
+  
+    width: 20em;
+    height:20em;
+    position: absolute;
+    transform: translate(3em, 2em);
+    
+    
 }
 
 
@@ -160,5 +182,8 @@ section{
     align-items: center;
     
 }
+
+
+
 
 

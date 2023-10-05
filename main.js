@@ -81,6 +81,3 @@ document.addEventListener("DOMContentLoaded", function () {
 /*Revelado de imagenes  */ 
 
 /*animacion background section*/
-
-
-

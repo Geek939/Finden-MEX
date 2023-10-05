@@ -22,16 +22,16 @@
 
 body {
   font-family: Arial, sans-serif;
- 
-  scroll-behavior: smooth;
 }
 
 section {
   top: 0;
   height: 100vh;
   position: sticky;
+  width: 100vw;
 
 }
+
 
 
 
@@ -610,20 +610,21 @@ main{
 }
 
 .info2{
-  font-size: 2.125rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   text-align: justify;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  
 }
 
 
 .color2{
   color: #FFFFFF;
   font-family: 'AlbertSans-Light';
-  font-size: 2.125rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: lighter;
   line-height: normal;
@@ -632,21 +633,92 @@ main{
 .info2 p{
   color: #FFFFFF;
   font-family: 'AlbertSans-Bold';
-  font-size: 2.125rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-align: left;
+  
 }
 
 .greenColor{
   color: #53A490;
   font-family: 'AlbertSans-Bold';
-  font-size: 2.125rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
+
+.fuente{
+color: #53A490;
+font-family: 'AlbertSans-Light';
+font-size: 0.800rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding-top: 2px;
+width: 100%;
+
+}
+
+#section5{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.info3{ 
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 100%;
+  margin-top: 5em;
+  
+}
+
+.greenColor2{
+  color: #53A490;
+  font-family: 'AlbertSans-Bold';
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.boldBlack{
+  color: #28282B;
+  font-size: 1.8rem;
+  font-family: 'AlbertSans-Bold';
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.color3{
+  font-size: 1.8rem;
+ color: #54535A;
+ font-family: 'AlbertSans-Light';
+ font-style: normal;
+ font-weight: lighter;
+ line-height: normal;
+}
+
+.containerEmpresa{
+  width: 20.00956rem;
+  height: 12.01563rem;
+  background-color: red;
+   background-image: url('imgs/empresas-mexicanas.jpg');
+   background-size: cover; 
+  background-position: center center; 
+}
+
+
+
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {

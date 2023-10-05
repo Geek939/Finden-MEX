@@ -691,7 +691,7 @@ width: 100%;
   align-items: center;
   justify-content: center;
   top: 0;
-  margin-bottom: 5em;
+  padding-bottom: 9em;
   
 }
 
@@ -743,9 +743,8 @@ width: 100%;
 #section6{
   background-color: white;
   width: 100%;
-  
   top: 0;
-  padding-top: 23em;
+  padding-top: 28em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -821,7 +820,7 @@ h3{
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding-top: 3em;
+  padding-top: 9em;
 }
 
 .container5{

@@ -928,6 +928,7 @@ gap: 4em;
   background: #EFEFEF;
   margin-top: -12em;
   padding-top: 8em;
+  padding-bottom: 10em;
   
   
 }
@@ -1005,14 +1006,62 @@ h4{
 
 }
 
-.iconFooter{
+.iconFinden{
   width: 4.2rem;
-height: 7.2rem;
-flex-shrink: 0;
-position: absolute;
-transform: translate(7.5em, 17.5em);
+  height: 7.2rem;
+  flex-shrink: 0;
+  position: absolute;
+  transform: translate(7.5em, 17.5em);
 
 }
+
+#section9{
+  
+  width: 100%;
+ 
+  background-image: url('icons/icon-footer.svg');
+  background-position: center center;
+  background-size: cover;
+  margin-top: 20em;
+  
+  background: linear-gradient(#28282B, #1A1A1C);
+}
+
+.footerFindemex{
+  width: 12.1875rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+}
+
+.footerBottom {
+  width: 14.375rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  top: 35px;
+  left: 1170px;
+  border-radius: 1.25rem;
+  background: #53A490;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .2em;
+}
+
+.formLink2 {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'AlbertSans-Bold';
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 167px;
+  height: 17px;
+  display: block;
+
+}
+
 
 
 /*  Media Query Pantallas Grandes  */

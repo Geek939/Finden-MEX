@@ -1027,7 +1027,7 @@ h4{
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 7em;
+  gap: 6em;
   padding-top: 5em;
   justify-content: center;
   align-items: center;
@@ -1094,6 +1094,7 @@ h4{
   gap: 1em;
   justify-content:center;
   align-items: center;
+  padding-top: 3em;
 }
 
 footer{
@@ -1116,12 +1117,14 @@ font-weight: 300;
 line-height: normal;
 text-decoration-line: underline;
 text-align: center;
+padding-top: 5em;
+padding-bottom: 5em;
 }
 
 
 .etiqueta{
   position: absolute;
-  bottom: 2em;
+  bottom: 2.5em;
   width: 6.0625rem;
   height: 2.1875rem;
   flex-shrink: 0;

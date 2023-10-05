@@ -29,10 +29,8 @@ section {
   position: sticky;
   width: 100vw;
   max-height:100vh; 
-  overflow-y: auto; 
-  scroll-behavior: smooth;
- 
-
+  overflow: auto; 
+  
 }
 
 
@@ -744,11 +742,15 @@ width: 100%;
   background-color: white;
   width: 100%;
   top: 0;
-  padding-top: 28em;
+  margin-top: 25em;
+  padding-top: 50em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+
+
 
   
 }
@@ -854,6 +856,56 @@ h3{
   font-weight: lighter;
   font-style: normal;
   text-align: center;
+}
+
+#section7{
+  background-color: white;
+  width: 100%;
+  top: 0;
+  padding-top: 24em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.info7{
+  text-align: center;
+
+
+}
+
+.container7{
+padding-left: 6em;
+padding-right: 6em;
+}
+
+.infoP3{
+  clear: #54535A;
+  font-family: 'AlbertSans-Light';
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-style: normal;
+  text-align: center;
+}
+
+.pagas3{
+  color: #53A490;
+  text-align: center;
+  font-family:'AlbertSans-Bold';
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.finloop{
+  position: absolute;
+  width: 18rem;
+  height: 34rem;
+  flex-shrink: 0;
+  transform: translate(-19em);
 }
 
 /*  Media Query Pantallas Grandes  */

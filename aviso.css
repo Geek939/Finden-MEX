@@ -16,6 +16,11 @@
     
   }
 
+  section{
+    height: 100vh;
+    width: 100vw;
+  }
+
   .navSection6{
     opacity: 0.95;
     background: #F6F6F7;
@@ -134,3 +139,26 @@ section{
     justify-content: center;
     gap: 5em;
 }
+
+.footerContainer{
+    top: 0;
+     background: linear-gradient(#28282B, #1A1A1C);
+     position: relative;
+     width: 100%;
+     
+}
+
+
+.footer{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    padding-top: 5em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+

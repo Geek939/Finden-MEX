@@ -956,9 +956,11 @@ h4{
 
 .info8{
   font-size: 1.4rem;
-  padding-left: 1.6em;
-  padding-right: 1.6em;
+ line-height: normal;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: center;
+ 
 }
 
 .black{
@@ -972,6 +974,13 @@ h4{
 
 .ligthBlack{
   color: #28282B;
+  font-family:'AlbertSans-light';
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.formulario{
+  color: #28282B;
   text-align: center;
   font-family:'AlbertSans-light';
   font-style: normal;
@@ -981,6 +990,28 @@ h4{
 
 .container8{
   padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empresarioImg{
+  width: 17rem;
+  height: 20rem;
+  flex-shrink: 0;
+  margin-top: 4em;
+  position: relative;
+
+}
+
+.iconFooter{
+  width: 4.875rem;
+height: 7.3125rem;
+flex-shrink: 0;
+position: absolute;
+transform: translate(-15em, 5em);
+fill: linear-gradient(90deg, #53A490 0%, #5CB189 19%, #74D675 39%, #7EE46D 50%);
 }
 
 

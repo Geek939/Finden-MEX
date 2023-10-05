@@ -1017,14 +1017,20 @@ h4{
 
 #section9{
   
-  width: 100%;
- 
-  background-image: url('icons/icon-footer.svg');
-  background-position: center center;
-  background-size: cover;
-  margin-top: 20em;
-  
+  top: 0;
   background: linear-gradient(#28282B, #1A1A1C);
+  
+  
+}
+
+.sectionContainer9{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  padding-top: 15em;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerFindemex{
@@ -1062,6 +1068,61 @@ h4{
 
 }
 
+.financiera{
+  width: 115px;
+  height: 35px;
+  
+}
+
+.footerImg{
+  position: absolute;
+}
+
+.footerLinks{
+  color: #FFF;
+  font-family: 'AlbertSans-light';
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.linksContainer{
+
+  display: flex;
+  gap: 1em;
+  justify-content:center;
+  align-items: center;
+}
+
+footer{
+  color: #FFF;
+  font-family: 'AlbertSans-light';
+  font-size: 0.5625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.goplek{
+  color: #FFF;
+font-family: 'AlbertSans-light';
+font-size: 0.6875rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-decoration-line: underline;
+text-align: center;
+}
+
+
+.etiqueta{
+  width: 6.0625rem;
+  height: 2.1875rem;
+  flex-shrink: 0;
+}
 
 
 /*  Media Query Pantallas Grandes  */

@@ -34,11 +34,11 @@ body {
 
 .navSection6 {
     display: flex;
-    flex-direction: row;
-
+   
     opacity: 0.95;
     background: #F6F6F7;
 
+    width: 26.875rem;
     height: 4.375rem;
     flex-shrink: 0;
 }

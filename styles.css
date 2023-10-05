@@ -1006,12 +1006,12 @@ h4{
 }
 
 .iconFooter{
-  width: 4.875rem;
-height: 7.3125rem;
+  width: 4.2rem;
+height: 7.2rem;
 flex-shrink: 0;
 position: absolute;
-transform: translate(-15em, 5em);
-fill: linear-gradient(90deg, #53A490 0%, #5CB189 19%, #74D675 39%, #7EE46D 50%);
+transform: translate(7.5em, 17.5em);
+
 }
 
 

@@ -113,6 +113,7 @@ window.addEventListener('scroll', function()  {
 // Elementos HTML
 const horizontalScroll = document.querySelector('.horizontal-scroll');
 const sections = document.querySelectorAll('.scrollable-section');
+
 let isDragging = false;
 let initialX;
 let offsetX = 0;
@@ -147,6 +148,13 @@ window.addEventListener('mouseup', () => {
       left: scrollLeftBeforeDrag,
       behavior: 'smooth',
     });
+  } else if (scrollLeftBeforeDrag !== horizontalScroll.scrollLeft) {
+    // El scroll se desplazó pero no regresó, entonces retrocede suavemente
+    horizontalScroll.scrollTo({
+      left: scrollLeftBeforeDrag,
+      behavior: 'smooth',
+    });
   }
 });
+
 

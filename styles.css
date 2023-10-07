@@ -33,7 +33,7 @@ section {
   top: 0;
   width: 100vw;
   max-height:100vh; 
-
+overflow: auto;
   
  
   
@@ -504,7 +504,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding-top: 9em;
+  padding-top: 1em;
 
 }
 
@@ -569,6 +569,15 @@ header {
   position: absolute;
   transform: translate(-19em);
  
+}
+
+.section-3Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  
 }
 
 main{
@@ -1493,16 +1502,13 @@ padding-bottom: 5em;
 
 
 
-#section3 {
-width: 100vw;
-padding-top: 9em;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-gap: 5em;
-padding-bottom: 6em;
-top: 0;
+.section-3Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+  margin-top: 4em;
 }
 
 
@@ -1517,8 +1523,7 @@ top: 0;
 
   main {
    
-    display: flex;
-    flex-direction: row;
+   
   
     top: 0;
     gap: 5em;

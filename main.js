@@ -1,3 +1,17 @@
+/*Deslizamiento suave*/ 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+/* ######  */
+
+
 /* Efecto COVER  #####################*/
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -53,10 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", checkAndShowElement);
 });
 
-/*2do texto*/
 
-/*2do texto */
-/* Entrada de texto */
 
 /*Revelado de imagenes */
 document.addEventListener("DOMContentLoaded", function () {

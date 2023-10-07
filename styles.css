@@ -184,7 +184,8 @@ h1 {
   justify-content: center;
   width: 100%;
   position: relative;
- 
+  padding-top: 3em;
+  padding-bottom: 5em;
 }
 
 
@@ -300,7 +301,7 @@ header {
 
 .section-2{
   background-color: white;
-  
+ top: 0;
 }
 
 .description {
@@ -489,37 +490,36 @@ header {
 
 
 /*   */
-.section-3{
+
+#section3{
   background-color: white;
-  
   padding-top: 0.5em;
+  width: 100%;
+  top: 0;
 }
 
 .section-3Container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  gap: 6em;
-  
-
+  justify-content: center;
+  gap: 2em;
+  padding-top: 9em;
 }
 
 .info{
   background-color: white;
-  width: 370px;
-  height: 164px;
+  width: 23.125rem;
   text-align: justify;
-  padding-top: 3em;
   padding-left: 2em;
   padding-right: 2em;
+  font-size: 1.550em;
 }
 
 .info p{
   
   color: #28282B;
   font-family: 'AlbertSans-Bold';
-  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -528,7 +528,6 @@ header {
 .colorB{
   color: #28282B;
   font-family: 'AlbertSans-Bold';
-  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -537,7 +536,6 @@ header {
 .color{
   color: #53A490;
   font-family: 'AlbertSans-Bold';
-  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -552,8 +550,8 @@ header {
 }
 
 .pibContainer{
-  
-  padding-top: 4em;
+  padding-bottom: 6em;
+
   
 }
 
@@ -579,9 +577,6 @@ main{
   background-color: white;
   align-items: center;
   padding-top: 5%;
-  overflow-x: hidden;
-  
-  
 }
 
 #section4{
@@ -1424,7 +1419,7 @@ padding-bottom: 5em;
   padding-left: 2em;
   padding-right: 2em;
   width: 555px;
-  height: 164px;
+  height: 232px;
 }
 
 .info p{
@@ -1466,12 +1461,15 @@ padding-bottom: 5em;
 
 
 #section3{
-width:100%;
-
+width: 100%;
+padding-top: 9em;
 display: flex;
-align-items: center;
 justify-content: center;
-gap: 52em;
+
+overflow-y: hidden;
+gap: 2em;
+padding-bottom: 6em;
+top: 0;
 }
 
 
@@ -1479,4 +1477,12 @@ gap: 52em;
   background-color: black;
   
 }
+
+
+  main {
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    display: flex;
+    flex-direction: row;
+  }
+  
 }

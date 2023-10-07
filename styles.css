@@ -1028,6 +1028,16 @@ h4{
   padding-top: 5em;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.bgFooter {
+  width: 34em;
+  height: 34em;
+  position: absolute;
+  transform: translate(5em, 4em);
+
+ 
 }
 
 .footerFindemex{
@@ -1074,6 +1084,7 @@ h4{
 
 .footerImg{
   position: absolute;
+
 }
 
 .footerLinks{

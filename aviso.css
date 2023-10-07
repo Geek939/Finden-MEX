@@ -176,16 +176,17 @@ h1 {
     background: linear-gradient(#28282B, #1A1A1C);
     position: relative;
     width: 100vw;
+    overflow: hidden;
 }
 
 
 
-.bgFooter {
+.bgFooter2 {
 
-    width: 20em;
-    height: 20em;
+    width: 37em;
+    height: 37em;
     position: absolute;
-    transform: translate(3em, 2em);
+    transform: translate(-0.87em, 2em);
 
 
 }

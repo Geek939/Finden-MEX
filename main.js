@@ -106,3 +106,47 @@ window.addEventListener('scroll', function()  {
       }
     }
 });
+
+
+/* Scroll Horizontal*/
+
+// Elementos HTML
+const horizontalScroll = document.querySelector('.horizontal-scroll');
+const sections = document.querySelectorAll('.scrollable-section');
+let isDragging = false;
+let initialX;
+let offsetX = 0;
+let scrollLeftBeforeDrag;
+
+horizontalScroll.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  initialX = e.clientX + horizontalScroll.scrollLeft;
+  offsetX = e.clientX;
+  scrollLeftBeforeDrag = horizontalScroll.scrollLeft;
+  horizontalScroll.style.cursor = 'grabbing'; // Cambia el cursor durante el arrastre
+  e.preventDefault(); // Previene el comportamiento predeterminado del navegador
+});
+
+window.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+
+  const deltaX = e.clientX - offsetX;
+  offsetX = e.clientX;
+  horizontalScroll.scrollLeft = initialX - deltaX;
+});
+
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+  horizontalScroll.style.cursor = 'grab';
+
+  // Determina si el desplazamiento se realizó en más de la mitad de la sección
+  const halfway = horizontalScroll.scrollLeft > scrollLeftBeforeDrag + horizontalScroll.offsetWidth / 2;
+  if (!halfway) {
+    // Desplázate suavemente de regreso a la sección anterior
+    horizontalScroll.scrollTo({
+      left: scrollLeftBeforeDrag,
+      behavior: 'smooth',
+    });
+  }
+});
+

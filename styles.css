@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; 
 }
 
 
@@ -31,18 +32,14 @@ body {
 section {
   position: sticky;
   top: 0;
-  width: 100vw;
-  max-height:100vh; 
-overflow: auto;
-  
- 
-  
+    width: 100vw;
+    max-height:100vh; 
 }
 
 
 .section-1{
   background-color: white;
-
+overflow: auto;
 }
 /* EFECTO COVER ##################################*/
 
@@ -1455,13 +1452,11 @@ padding-bottom: 5em;
   }
 
 .info{
-  background-color: white;
+
   text-align: justify;
-  padding-top: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
   width: 555px;
   height: 232px;
+  
 }
 
 .info p{
@@ -1505,10 +1500,10 @@ padding-bottom: 5em;
 .section-3Container {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 6em;
-  margin-top: 4em;
+  align-items: center;
+  max-height: 100%;
+  width: 100%;
 }
 
 
@@ -1516,18 +1511,18 @@ padding-bottom: 5em;
   background-color: black;
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  overflow-x: scroll;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
 }
 
 
   main {
    
+    overflow: hidden;
    
-  
-    top: 0;
-    gap: 5em;
-    left: 0;
+
   }
   
   .fadeTop{
@@ -1543,9 +1538,8 @@ padding-bottom: 5em;
     background-color: white;
     width: 100%;
     top: 0;
-   height: 100%;
+    height: 100%;
     padding-bottom: 5em;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1554,6 +1548,38 @@ padding-bottom: 5em;
 
    
   }
+
+  /*
+  .horizontal-scroll::-webkit-scrollbar{
+    width: 0;
+  }
+*/
+
+.horizontal-scroll {
+  display: flex;
+  flex-direction: row; /* Cambia la dirección a horizontal */
+  overflow-x: auto; /* Habilita el desplazamiento horizontal */
+  cursor: grab; /* Cambia el cursor a una mano abierta para indicar desplazamiento */
+  cursor: -webkit-grab; /* Para navegadores webkit */
+}
+
+.scrollable-section {
+  flex: 0 0 100vw; /* Ancho de la ventana */
+  height: 100vh; /* Altura de la ventana */
+  scroll-snap-align: start; /* Alinea las secciones al principio */
+  scroll-snap-stop: always; /* Detiene el desplazamiento en cada sección */
+}
+
+.scrollable-section::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  display: block;
+  flex: none;
+  margin-inline: auto;
+  scroll-snap-align: end; /* Alinea al final de la sección */
+}
+
 
 
 }

@@ -1140,6 +1140,41 @@ padding-bottom: 5em;
 
 }
 
+.footerContainer {
+
+  background: linear-gradient(#28282B, #1A1A1C);
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+
+.bgFooter2 {
+
+  width: 37em;
+  height: 37em;
+  position: absolute;
+  transform: translate(-0.87em, 2em);
+
+
+}
+
+
+.footer {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  padding-top: 5em;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {

@@ -1265,7 +1265,7 @@ padding-bottom: 5em;
 
     color: #28282B;
     font-family: 'AlbertSans-Bold';
-    font-size: 2.870rem;
+    font-size: 1.8rem;
     align-items: center;
     line-height: normal;
 
@@ -1274,14 +1274,14 @@ padding-bottom: 5em;
 
   .descriptionContent {
     width: 34.6875em;
-
-    padding-top: 10%;
-    font-size: 1em;
+    padding-left: 5em;
+    padding-top: 10em;
+    
   }
 
 
   .description span {
-    font-size: 2.870rem;
+    font-size: 1.8rem;
 
   }
 

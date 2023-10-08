@@ -934,7 +934,7 @@ h3 {
   color: #53A490;
   text-align: center;
   font-family: 'AlbertSans-Bold';
-
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -958,7 +958,7 @@ h3 {
 #section8 {
   background: #EFEFEF;
   margin-top: -12em;
-  padding-top: 8em;
+  padding-top: 4em;
   padding-bottom: 10em;
   overflow: auto;
 
@@ -987,7 +987,7 @@ h4 {
 }
 
 .info8 {
-  font-size: 1.4rem;
+  
   line-height: normal;
   padding-left: 1em;
   padding-right: 1em;
@@ -996,6 +996,7 @@ h4 {
 }
 
 .black {
+  font-size: 1.4rem;
   color: #28282B;
   text-align: center;
   font-family: 'AlbertSans-Bold';
@@ -1005,6 +1006,7 @@ h4 {
 }
 
 .ligthBlack {
+  font-size: 1.4rem;
   color: #28282B;
   font-family: 'AlbertSans-light';
   font-style: normal;
@@ -1012,6 +1014,7 @@ h4 {
 }
 
 .formulario {
+  font-size: 1.4rem;
   color: #28282B;
   text-align: center;
   font-family: 'AlbertSans-light';
@@ -1486,7 +1489,7 @@ footer {
     text-align: justify;
     width: 555px;
     height: 232px;
-
+    
   }
 
   .info p {
@@ -1529,11 +1532,10 @@ footer {
   #section3 {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    padding-inline-start: 10em;
+ 
+   
 
   }
 
@@ -1544,6 +1546,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 
     
 
@@ -1552,7 +1555,7 @@ footer {
 
   main {
 
-  overflow: hidden;
+  overflow:hidden;
   width: min-content;
   }
 
@@ -1561,27 +1564,16 @@ footer {
 
   #section6 {
     background-color: white;
-    width: 100%;
-    top: 0;
-    height: min-content;
-    padding-bottom: 5em;
-    margin-top: 5em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow-x: auto;
-
     
 
 
   }
 
-  /*
+  
   .horizontal-scroll::-webkit-scrollbar{
     width: 0;
   }
-*/
+
 
   .horizontal-scroll {
     display: flex;
@@ -1684,7 +1676,90 @@ flex-shrink: 0;
 
 
 
+.linea-verde2 {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container6 {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.content6 {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para resaltar el contenido activo */
+.active-content {
+  background-color: #fff;
+}
 
 
+  .container8 {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
 
+
+  .info8{
+    
+    text-align: left;
+    line-height: normal;
+    width: min-content;
+    width: 27rem;
+  }
+
+  h4{
+    padding-bottom: 1em;
+    font-size: 2.2rem;
+    text-align: left;
+    width: 19rem;
+  }
+
+  .h4Green{
+    font-size: 2.2rem;
+  }
+
+  #section8{
+    
+  }
+
+  .empresarioImg {
+    width: 17rem;
+    height: 20rem;
+    flex-shrink: 0;
+    margin-top: 4em;
+    position: relative;
+  
+  }
+  
+  .iconFinden {
+    width: 4.2rem;
+    height: 7.2rem;
+    flex-shrink: 0;
+    position: absolute;
+    transform: translate(29em, 11em);
+  
+  }
+
+  .black {
+    text-align: left;
+  }
 }

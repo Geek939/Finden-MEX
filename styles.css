@@ -1737,9 +1737,6 @@ flex-shrink: 0;
     font-size: 2.2rem;
   }
 
-  #section8{
-    
-  }
 
   .empresarioImg {
     width: 17rem;
@@ -1762,4 +1759,14 @@ flex-shrink: 0;
   .black {
     text-align: left;
   }
+
+
+
+.bgFooter2 {
+
+  
+  transform: translate(26.5em, 2em);
+
+
+}
 }

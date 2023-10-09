@@ -1817,11 +1817,7 @@ h2{
   padding-left: 4rem;
 }
 
-.imgcontainer :nth-child(3){
 
-
-
-}
 
 
 .imgcontainer img {
@@ -1838,9 +1834,12 @@ h2{
   overflow: hidden;
   align-items: center;
   justify-content: center; 
+  display: flex;
 }
 
-
+.info6{
+  padding-left: 5rem;
+}
 
 .info4 {
 

@@ -1894,7 +1894,7 @@ h2{
 .financiera2{
 position: absolute;
 display: flex;
-transform: translate(25rem);
+transform: translate(25em);
 }
 
 .linksContainer{
@@ -1906,6 +1906,7 @@ transform: translate(25rem);
   padding-top: 10rem;
   gap: 10rem;
   position: relative;
+  width: 100vw;
 }
 
 

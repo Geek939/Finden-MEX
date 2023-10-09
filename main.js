@@ -162,36 +162,28 @@ window.addEventListener('mouseup', () => {
 /* bloque con scroll  */
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const revealContainers = document.querySelectorAll(".reveal");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Inicialmente, el primer container está activo
-    const container4 = document.getElementById("container4");
-    container4.classList.add("active-content");
+  revealContainers.forEach((container) => {
+    const image = container.querySelector("img");
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container,
+        toggleActions: "restart none none reset",
+      },
+    });
 
-    window.addEventListener("scroll", function () {
-      // Obtenemos la posición actual del scroll
-      const scroll = window.scrollY;
-
-      // Calculamos el ancho de cada contenido
-      const contentWidth = container4.offsetWidth;
-
-      // Calculamos cuál es el contenido activo en función de la posición del scroll
-      const activeContentIndex = Math.floor(scroll / contentWidth);
-
-      // Removemos la clase 'active-content' de todos los contenidos
-      document.querySelectorAll(".content6").forEach(function (content) {
-        content.classList.remove("active-content");
-      });
-
-      // Agregamos la clase 'active-content' al contenido activo
-      const activeContent = document.getElementById(
-        "container" + (activeContentIndex + 4)
-      );
-      if (activeContent) {
-        activeContent.classList.add("active-content");
-      }
+    tl.set(container, { autoAlpha: 1 });
+    tl.from(container, 1.5, {
+      xPercent: -100,
+      ease: "power2.out",
+    });
+    tl.from(image, 1.5, {
+      xPercent: 100,
+      scale: 1.3,
+      delay: -1.5,
+      ease: "power2.out",
     });
   });
-
-
-
+});

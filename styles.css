@@ -1129,6 +1129,7 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-top: 3em;
+  flex-direction: column;
 }
 
 footer {
@@ -1244,6 +1245,16 @@ footer {
   display: none;
 }
 
+.conntainerA{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.financiera2{
+  display: none;
+}
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
@@ -1868,5 +1879,68 @@ h2{
 .creditoSimple{
 
 }
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.financiera{
+  display: none;
+}
+
+.financiera2{
+position: absolute;
+display: flex;
+transform: translate(25rem);
+}
+
+.linksContainer{
+  display: flex;
+ padding-left: 2rem;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: 10rem;
+  gap: 10rem;
+  position: relative;
+}
+
+
+footer{
+  display: none;
+}
+
+.footerEnd{
+  color: #FFF;
+  font-family: 'AlbertSans-light';
+  font-size: 0.5625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.goplek {
+ 
+  padding-bottom: 0em;
+  padding-left: 22em;
+}
+
+.containerA{
+display: flex;
+gap: 1rem;
+}
+
+#section9{
+  height: 100%;
+  width: 100%;
+}
+
 
 }

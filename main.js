@@ -192,5 +192,101 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/*Revelado imgcontainer */
+/*Footer */
+
+gsap.registerPlugin(ScrollTrigger);
+
+const scroller = document.querySelector('.scroller');
+
+
+
+var __extends = this && this.__extends || function () {
+  var extendStatics = function (d, b) {
+    extendStatics = Object.setPrototypeOf ||
+    { __proto__: [] } instanceof Array && function (d, b) {d.__proto__ = b;} ||
+    function (d, b) {for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];};
+    return extendStatics(d, b);
+  };
+  return function (d, b) {
+    extendStatics(d, b);
+    function __() {this.constructor = d;}
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var EdgeEasingPlugin = /** @class */function (_super) {
+  __extends(EdgeEasingPlugin, _super);
+  function EdgeEasingPlugin() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+    _this._remainMomentum = {
+      x: 0,
+      y: 0 };
+
+    return _this;
+  }
+  EdgeEasingPlugin.prototype.transformDelta = function (delta) {
+    var _a = this.scrollbar,limit = _a.limit,offset = _a.offset;
+    var x = this._remainMomentum.x + delta.x;
+    var y = this._remainMomentum.y + delta.y;
+    // clamps momentum within [-offset, limit - offset]
+    this.scrollbar.setMomentum(Math.max(-offset.x, Math.min(x, limit.x - offset.x)), Math.max(-offset.y, Math.min(y, limit.y - offset.y)));
+    return { x: 0, y: 0 };
+  };
+  EdgeEasingPlugin.prototype.onRender = function (remainMomentum) {
+    Object.assign(this._remainMomentum, remainMomentum);
+  };
+  EdgeEasingPlugin.pluginName = 'edgeEasing';
+  return EdgeEasingPlugin;
+}(Scrollbar.ScrollbarPlugin);
+Scrollbar.use(EdgeEasingPlugin);
+
+
+
+const bodyScrollBar = Scrollbar.init(scroller, { damping: 0.1, delegateTo: document, alwaysShowTracks: true });
+
+ScrollTrigger.scrollerProxy(".scroller", {
+  scrollTop(value) {
+    if (arguments.length) {
+      bodyScrollBar.scrollTop = value;
+    }
+    return bodyScrollBar.scrollTop;
+  }
+});
+
+bodyScrollBar.addListener(ScrollTrigger.update);
+
+ScrollTrigger.defaults({ scroller: scroller });
+
+
+
+
+
+gsap.set('section.footer-container', { yPercent: -50 })
+
+const uncover = gsap.timeline({ paused:true })
+
+uncover
+.to('section.footer-container', { yPercent: 0, ease: 'none' })
+;
+
+ScrollTrigger.create({  
+  trigger: 'section.conclusion',
+  start: 'bottom bottom',
+  end: '+=75%',
+  animation: uncover,
+  scrub: true,  
+  markers: true,
+})
+
+
+
+
+
+// Only necessary to correct marker position - not needed in production
+if (document.querySelector('.gsap-marker-scroller-start')) {		
+  const markers = gsap.utils.toArray('[class *= "gsap-marker"]');	
+
+  bodyScrollBar.addListener(({ offset }) => {  
+    gsap.set(markers, { marginTop: -offset.y })
+  });
+}
 

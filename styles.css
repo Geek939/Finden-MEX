@@ -1740,13 +1740,13 @@ flex-shrink: 0;
 
   h4{
     padding-bottom: 1em;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: left;
     width: 19rem;
   }
 
   .h4Green{
-    font-size: 2.2em;
+    font-size: 2.3rem;
   }
 
 
@@ -1764,15 +1764,29 @@ flex-shrink: 0;
     height: 7.2em;
     flex-shrink: 0;
     position: absolute;
-    transform: translate(29em, 11em);
+    transform: translate(23.5em, 10.5em);
   
   }
 
   .black {
     text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .ligthBlack {
+    font-size: 1.5rem;
   }
 
 
+  .formulario {
+    font-size: 1.5rem;
+  }
+
+  .pagas3 {
+
+    font-size: 1.5rem;
+ 
+  }
 
 .bgFooter2 {
 

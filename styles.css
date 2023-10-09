@@ -205,10 +205,11 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 100%;
- 
+
   position: relative;
   padding-top: 3em;
   padding-bottom: 5em;
+  overflow: hidden;
 }
 
 
@@ -325,8 +326,8 @@ header {
 .section-2 {
   background-color: white;
   top: 0;
+  height: 100%;
   overflow: auto;
-
 
 }
 
@@ -337,13 +338,12 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 23.0625em;
+
   padding: 1.5em;
   width: 369px;
   height: 371px;
-  top: 62em;
-  left: 1.9375em;
-  padding-top: 1em;
+  
+  
 
 }
 
@@ -360,7 +360,7 @@ header {
 .description {
   opacity: 0;
   transform: translateX(50px);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 2s, transform 2s;
 }
 
 /*Efecto de entrada de texto */
@@ -1508,6 +1508,8 @@ footer {
   }
 
   .descriptionContent {
+    top: 0;
+    align-items: center;
     width: 34.6875em;
     padding-left: 5em;
   }

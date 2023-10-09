@@ -54,17 +54,20 @@ document.addEventListener("DOMContentLoaded", function() {
     if (isElementInViewport(description)) {
       description.style.opacity = "1";
       description.style.transform = "translateY(0)";
-      window.removeEventListener("scroll", checkAndShowElement);
     }
   }
 
   function checkAndShowElement() {
     if (isElementInViewport(description)) {
       showElement();
+      window.removeEventListener("scroll", checkAndShowElement);
     }
   }
 
   window.addEventListener("scroll", checkAndShowElement);
+  
+  // Asegúrate de llamar a checkAndShowElement una vez para que el efecto se aplique
+  checkAndShowElement();
 });
 
 

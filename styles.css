@@ -1746,13 +1746,13 @@ flex-shrink: 0;
   }
 
   .h4Green{
-    font-size: 2.2rem;
+    font-size: 2.2em;
   }
 
 
   .empresarioImg {
-    width: 17rem;
-    height: 20rem;
+    width: 17em;
+    height: 20em;
     flex-shrink: 0;
     margin-top: 4em;
     position: relative;
@@ -1760,8 +1760,8 @@ flex-shrink: 0;
   }
   
   .iconFinden {
-    width: 4.2rem;
-    height: 7.2rem;
+    width: 4.2em;
+    height: 7.2em;
     flex-shrink: 0;
     position: absolute;
     transform: translate(29em, 11em);
@@ -1795,7 +1795,7 @@ flex-shrink: 0;
 h2{
   text-align: center;
   font-family: 'AlbertSans-Bold';
-  font-size: 3.375rem;
+  font-size: 3.375em;
   font-weight: 700;
   line-height: 65px;
   letter-spacing: 0em;
@@ -1813,16 +1813,16 @@ h2{
   align-items: center;
   position: relative;
   justify-content: center;
-  gap: 2rem;
-  padding-left: 4rem;
+  gap: 2em;
+  padding-left: 4em;
 }
 
 
 
 
 .imgcontainer img {
-  width: 19rem;
-  height: 13rem;
+  width: 19em;
+  height: 13em;
   object-fit: cover;
   transform-origin: left;
   background: white;
@@ -1838,7 +1838,7 @@ h2{
 }
 
 .info6{
-  padding-left: 5rem;
+  padding-left: 5em;
 }
 
 .info4 {

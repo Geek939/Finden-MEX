@@ -885,9 +885,9 @@ h3 {
 }
 
 .info7 {
-  text-align: center;
-  font-size: 1.5rem;
 
+font-size: 1.220rem;
+text-align: center;
 }
 
 .container7 {
@@ -898,6 +898,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 4em;
+  margin-top: -2em;
 }
 
 .infoP3 {
@@ -906,14 +907,14 @@ h3 {
 
   font-weight: lighter;
   font-style: normal;
-  text-align: center;
+ 
 }
 
 .pagas3 {
   color: #53A490;
   text-align: center;
   font-family: 'AlbertSans-Bold';
-  font-size: 1.4rem;
+
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -926,30 +927,34 @@ h3 {
   height: 100%; /* Ajusta la altura según tus necesidades */
 }
 
-.dots2 {
-  width: 100%; /* Ajusta el tamaño de dots2 según tus necesidades */
+.dots3 {
+  width: 14.722rem;
+height: 21.35613rem;
+flex-shrink: 0;
   position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%); /* Aplica el clip-path */
 }
 
 .finloop {
-  width: 15rem;
-  height: 25rem;
+  width: 10rem;
+  height: 20rem;
   flex-shrink: 0;
   position: absolute;
   bottom: -100%; /* Inicialmente fuera de la vista */
   transition: bottom 1s ease, clip-path 1s ease;
-transform: translate(-17.5em, 6em);
+transform: translate(-12.5em, 3em);
 }
 
 .finloop.active {
-  bottom: 0; /* Cuando se hace scroll, posiciona finloop encima de dots2 */
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%); /* Aplica el clip-path */
+  bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%); 
 }
 
 
 #section8 {
   background: #EFEFEF;
-  padding-top: 4em;
+ margin-top: -5em;
+ padding-top: 5em;
   padding-bottom: 8em;
   top: 0;
 
@@ -1614,7 +1619,7 @@ footer {
     align-items: center;
     justify-content: center;
     overflow-x:hidden ;
-   
+   padding-left: 10%;
 
   }
 
@@ -1818,7 +1823,7 @@ flex-shrink: 0;
 
 #section8{
   overflow-y: hidden;
-  
+ margin-top: -5em;
 }
 
 h2{

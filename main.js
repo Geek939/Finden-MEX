@@ -195,3 +195,15 @@ document.addEventListener("DOMContentLoaded", function () {
 /*Footer */
 
 
+// Detecta cuando se hace scroll
+window.addEventListener("scroll", function() {
+  var finloop = document.querySelector(".finloop");
+  var dots2 = document.querySelector(".dots2");
+  var rect = finloop.getBoundingClientRect();
+  var windowHeight = window.innerHeight;
+
+  // Verifica si finloop está en la vista
+  if (rect.top < windowHeight) {
+    finloop.classList.add("active");
+  }
+});

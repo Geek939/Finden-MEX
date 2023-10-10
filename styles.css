@@ -920,37 +920,32 @@ h3 {
 }
 
 
-.finloop {
-  position: absolute;
-  width: 16rem;
-
-  transform: translate(2rem, -18.5rem);
-
-  height: 0;
-  overflow: hidden;
-  transition: height 0.5s ease, clip-path 0.5s ease;
-}
-
-.finloop img{
-  width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);
-  transition: clip-path 0.5s ease;
-}
-
-/* Cuando el elemento se desplaza a su posición original */
-.finloop.active {
-  height: auto;
-}
-
-.finloop.active img {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
 .containerImgs {
-  height: 25rem;
-  overflow-y: hidden;
-
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Ajusta la altura según tus necesidades */
 }
+
+.dots2 {
+  width: 100%; /* Ajusta el tamaño de dots2 según tus necesidades */
+  position: relative;
+}
+
+.finloop {
+  width: 15rem;
+  height: 25rem;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: -100%; /* Inicialmente fuera de la vista */
+  transition: bottom 1s ease, clip-path 1s ease;
+transform: translate(-17.5em, 6em);
+}
+
+.finloop.active {
+  bottom: 0; /* Cuando se hace scroll, posiciona finloop encima de dots2 */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%); /* Aplica el clip-path */
+}
+
 
 #section8 {
   background: #EFEFEF;

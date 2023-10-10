@@ -560,14 +560,14 @@ header {
 
 .pibContainer {
   padding-bottom: 6em;
-
+  position: relative;
 
 }
 
 .dots {
   width: 20em;
   height: 20em;
-  position: relative;
+ 
 }
 
 .pib {
@@ -923,14 +923,27 @@ h3 {
 .finloop {
   position: absolute;
   width: 16rem;
-  height: 32rem;
+
   transform: translate(2rem, -18.5rem);
+
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease, clip-path 0.5s ease;
 }
 
 .finloop img{
   width: 100%;
- 
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);
+  transition: clip-path 0.5s ease;
+}
+
+/* Cuando el elemento se desplaza a su posición original */
+.finloop.active {
+  height: auto;
+}
+
+.finloop.active img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .containerImgs {
@@ -1029,7 +1042,7 @@ h4 {
   height: 7.2rem;
   flex-shrink: 0;
   position: absolute;
-  transform: translate(7.5rem, 22.3rem);
+  transform: translate(8em, 26.3em);
 
 }
 
@@ -1602,9 +1615,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-
-    
+    overflow-x:hidden ;
 
   }
 
@@ -1775,7 +1786,7 @@ flex-shrink: 0;
     height: 7.2em;
     flex-shrink: 0;
     position: absolute;
-    transform: translate(23.5rem, 10.5rem);
+    transform: translate(24.5em, 11em);
   
   }
 
@@ -1894,7 +1905,8 @@ h2{
 .financiera2{
 position: absolute;
 display: flex;
-transform: translate(25em);
+bottom: 1%;
+right: 40%;
 }
 
 .linksContainer{
@@ -1905,8 +1917,8 @@ transform: translate(25em);
   justify-content: flex-start;
   padding-top: 10rem;
   gap: 10rem;
-  position: relative;
-  width: 100vw;
+ 
+  
 }
 
 
@@ -1939,9 +1951,12 @@ gap: 1rem;
 }
 
 #section9{
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
+
+
 
 
 }

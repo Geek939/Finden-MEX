@@ -1642,6 +1642,9 @@ footer {
     cursor: -webkit-grab;
     /* Para navegadores webkit */
 
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
   }
 
   .scrollable-section {
@@ -1653,6 +1656,8 @@ footer {
     /* Alinea las secciones al principio */
     scroll-snap-stop: always;
     /* Detiene el desplazamiento en cada sección */
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
   }
 
   .scrollable-section::after {

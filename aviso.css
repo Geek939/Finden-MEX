@@ -212,10 +212,70 @@ h1 {
 
 @media screen and (min-width: 768px) {
 
+    
+    .navSection6 {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 2em;
+        height: 2.875rem;  
+        padding-bottom: 5em;
+
+        }
+        
+    
+
+
     .navSection6 img{
         width: 13.82206rem;
         height: 3.125rem;
         flex-shrink: 0;
     }
 
+    .buttonAviso{
+        width: 14.375rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+        border-radius: 1.25rem;
+        background: #53A490;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      }
+
+      .buttonAvisoLink {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'AlbertSans-Bold';
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 167px;
+        height: 17px;
+        display: block;
+      
+      }
+
+
+      .avisoArrow {
+        width: 1.16531rem;
+        height: 0.98188rem;
+        flex-shrink: 0;
+        fill: #FFF;
+      }
+
+      .containerAviso{
+        display: flex;
+        gap:2rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+     .titleAviso {
+       color: black;
+       text-align: center;
+      }
 }

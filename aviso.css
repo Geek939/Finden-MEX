@@ -40,8 +40,13 @@ body {
     align-items: center;
     justify-content: space-around;
     padding-top: 2em;
-    height: 4.375rem;
-    
+    height: 4.375rem;   
+}
+
+.navSection6 img{
+    width: 9.625rem;
+    height: 2.1875rem;
+    flex-shrink: 0;
 }
 
 .creditLink2 {
@@ -201,5 +206,16 @@ h1 {
     padding-top: 5em;
     justify-content: center;
     align-items: center;
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .navSection6 img{
+        width: 13.82206rem;
+        height: 3.125rem;
+        flex-shrink: 0;
+    }
 
 }

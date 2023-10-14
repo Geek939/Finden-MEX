@@ -1081,33 +1081,74 @@ h4 {
 }
 
 .footerBottom {
-  width: 14.375rem;
-  height: 2.5rem;
-  flex-shrink: 0;
-  top: 35px;
-  left: 1170px;
-  border-radius: 1.25rem;
-  background: #53A490;
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .2em;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.25rem;
+  background: #53A490;
+  width: 14.375rem;
+  height: 2.5rem;
+  flex-shrink: 0;
 }
 
-.formLink2 {
+.footerBottom a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 50px); 
+  height: 100%;
   text-decoration: none;
-  color: #FFFFFF;
-  font-family: 'AlbertSans-Bold';
+
+  color: #FFF;
+text-align: right;
+font-family: "AlbertSans-ligth";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: bolder;
+line-height: normal;
+}
+
+.textButton2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+  color: #FFF;
+  text-align: right;
+  font-family: "AlbertSans-ligth";
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight:bolder;
   line-height: normal;
-  width: 167px;
-  height: 17px;
-  display: block;
-
 }
+
+.footerBottom a:hover .textButton2:first-child {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.footerBottom a:hover .textButton2:last-child {
+  transform: translateY(0);
+}
+
+.textButton2:last-child {
+  transform: translateY(100%);
+}
+
+
+
+
+
+
 
 .financiera {
   width: 115px;

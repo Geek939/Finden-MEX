@@ -1623,11 +1623,11 @@ footer {
     overflow-y: hidden;
    width: 200%;
     height: 100vh;
-    scroll-behavior: smooth;  /* Para navegadores que lo soporten, hace smooth scroll */
+    scroll-behavior: smooth;  
   }
   .scrollable-section {
     flex: 0 0 100vw;
-    transition: transform 0.5s ease-out;  /* Transición suave al desplazarse */
+    transition: transform 0.5s ease-out;  
   }
 
   

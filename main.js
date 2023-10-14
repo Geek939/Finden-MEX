@@ -170,18 +170,18 @@ window.addEventListener("scroll", function() {
 
 /**/ 
 
-// Desplazamiento horizontal cuando se desplaza verticalmente
+// Desplazamiento horizontal 
 let scrollContainer = document.querySelector(".horizontal-scroll");
 
 gsap.to(scrollContainer, {
-  x: "-100%", // Esto mueve el contenedor al 100% de su ancho hacia la izquierda
+  x: "-100%",
   scrollTrigger: {
     trigger: ".horizontal-scroll",
     start: "top top",
-    end: "+=200%", // La duración del desplazamiento horizontal es el doble del alto del contenedor
-    pin: true, // Asegura el contenedor en su lugar
-    scrub: true, // Hace que la animación se desplace suavemente con el desplazamiento del mouse
-    invalidateOnRefresh: true // Esto es necesario para manejar cambios de tamaño de ventana o rotación del dispositivo
+    end: "+=200%",
+    pin: true, 
+    scrub: true, 
+    invalidateOnRefresh: true 
   }
 });
 

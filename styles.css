@@ -39,7 +39,9 @@ section{
 }
 
 /* EFECTO COVER ##################################*/
-
+.scrollable-section{
+  display: none;
+}
 
 .hero-effects {
   

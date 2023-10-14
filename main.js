@@ -171,17 +171,18 @@ window.addEventListener("scroll", function() {
 /**/ 
 
 // Desplazamiento horizontal 
-let scrollContainer = document.querySelector(".horizontal-scroll");
+if (window.innerWidth >= 768) {
+  let scrollContainer = document.querySelector(".horizontal-scroll");
 
-gsap.to(scrollContainer, {
-  x: "-100%",
-  scrollTrigger: {
-    trigger: ".horizontal-scroll",
-    start: "top top",
-    end: "+=200%",
-    pin: true, 
-    scrub: true, 
-    invalidateOnRefresh: true 
-  }
-});
-
+  gsap.to(scrollContainer, {
+      x: "-100%",
+      scrollTrigger: {
+          trigger: ".horizontal-scroll",
+          start: "top top",
+          end: "+=200%",
+          pin: true, 
+          scrub: true, 
+          invalidateOnRefresh: true 
+      }
+  });
+}

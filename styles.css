@@ -23,20 +23,16 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-
 }
 
 section{
   overflow: hidden;
 }
 
-
-
-.section-1 {
-
- 
+body{
+  overflow-x: hidden;
 }
+
 
 /* EFECTO COVER ##################################*/
 .scrollable-section{
@@ -1698,13 +1694,13 @@ footer {
 
   .horizontal-scroll {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
-   width: 200%;
+    width: 200%;
     height: 100vh;
     scroll-behavior: smooth;  
   }
-  .scrollable-section {
+  .scrollable-section2 {
     flex: 0 0 100vw;
     transition: transform 0.5s ease-out;  
   }

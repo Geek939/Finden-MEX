@@ -175,7 +175,7 @@ if (window.innerWidth >= 768) {
   let scrollContainer = document.querySelector(".horizontal-scroll");
 
   gsap.to(scrollContainer, {
-      x: "-100%",
+      x: "-50%",
       scrollTrigger: {
           trigger: ".horizontal-scroll",
           start: "top top",

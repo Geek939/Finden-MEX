@@ -633,7 +633,7 @@ header {
   width: 17em;
   height: 17em;
   position: absolute;
-  transform: translate(-19em);
+  transform: translate(-18.2em);
 }
 
 .info2 {
@@ -922,30 +922,37 @@ text-align: center;
 .containerImgs {
   position: relative;
   overflow: hidden;
-  height: 100%; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  width: 22.875rem;
+  height: 23.125rem;
+  padding: 0.00006rem 0rem 0rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .dots3 {
-  width: 14.722rem;
-height: 21.35613rem;
+  width:90%;
+height: 90%;
 flex-shrink: 0;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%); /* Aplica el clip-path */
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%); 
 }
 
 .finloop {
-  width: 10rem;
-  height: 20rem;
+  width: 75%;
+  height: 100%;
   flex-shrink: 0;
   position: absolute;
   bottom: -100%; /* Inicialmente fuera de la vista */
   transition: bottom 1s ease, clip-path 1s ease;
-transform: translate(-12.5em, 3em);
+transform: translate(-0.1em, 2em);
 }
 
 .finloop.active {
   bottom: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%); 
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 65%); 
 }
 
 
@@ -1261,6 +1268,7 @@ footer {
 
 .imgcontainer {
   padding-top: 5em;
+  padding-bottom: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;

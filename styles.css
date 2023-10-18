@@ -520,17 +520,21 @@ header {
 
 .info {
   background-color: white;
-  width: 23.125rem;
-  text-align: justify;
-  padding-left: 2em;
-  padding-right: 2em;
-  font-size: 1.550em;
+
+
+  width: 370px;
+  height: 164px;
+  top: 2263px;
+  left: 30px;
+
+ 
 }
 
 .info p {
 
   color: #28282B;
   font-family: 'AlbertSans-Bold';
+  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -547,22 +551,35 @@ header {
 .color {
   color: #53A490;
   font-family: 'AlbertSans-Bold';
+  font-size: 2.125rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700; 
+  line-height: normal;
+}
+
+.colorDegrade{
+  color: #53A490;
+  font-family: 'AlbertSans-Light';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 600;
   line-height: normal;
 }
 
 
-
 .degrade {
   color: #54535A;
-  font-weight: lighter;
   font-family: 'AlbertSans-Light';
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .pibContainer {
   padding-bottom: 6em;
   position: relative;
+  padding-top: 1.2em;
 
 }
 

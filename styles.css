@@ -861,11 +861,7 @@ header {
   width: 100%;
   top: 0;
   padding-bottom: 5em;
-  padding-top: 35em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   overflow: auto;
 }
 
@@ -1315,10 +1311,11 @@ footer {
   background: white;
   position: relative;
   z-index: 3;
+
 }
 
 .imgcontainer {
-  padding-top: 5em;
+
   padding-bottom: 3em;
   display: flex;
   flex-direction: column;
@@ -1332,30 +1329,27 @@ footer {
 }
 
 .imgcontainer img {
-  width: 18rem;
-  height: 12rem;
+
   object-fit: cover;
   transform-origin: left;
+}
 
-
+.creditoImg{
+  width: 17.0625rem;
+  height: 10.625rem;
+  flex-shrink: 0;
 }
 
 .reveal {
   visibility: hidden;
   position: relative;
-  width: 80%;
-  height: 80%;
-  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
-.creditoImg2 {
-  display: none;
-}
 
-.creditoSimple {
-  display: none;
-}
 
 .conntainerA {
   display: flex;
@@ -1986,22 +1980,23 @@ footer {
 
   /*#######  */
   .imgcontainer {
-
+  
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
     justify-content: center;
     gap: 2em;
-    padding-left: 4em;
+    padding-top: 4em;
+   
   }
 
 
 
 
   .imgcontainer img {
-    width: 19em;
-    height: 13em;
+    
+    flex-shrink: 0;
     object-fit: cover;
     transform-origin: left;
     background: white;
@@ -2014,18 +2009,69 @@ footer {
     align-items: center;
     justify-content: center;
     display: flex;
+    height: 40.625em;  
   }
 
   .info6 {
-    padding-left: 5em;
+
   }
 
-  .info4 {}
+  .info4 {
+    padding: 2em;
+  }
 
+  .creditoImg {
+    position: relative;
+    width: 46.375em;
+    height: 35.625em;  
+    flex-shrink: 0;
+   
+  }
 
-  .creditoImg2 {}
+  .creditoImg2Container{
+    
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 4.3125rem;
+    height: 4.3125rem;
+    flex-shrink: 0;
+    fill: #EFEFEF;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.10));
+    transform: translate(8em,-18.1em);
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 
-  .creditoSimple {}
+  }
+
+  .creditoImg2 {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+
+  }
+
+  .creditoSimpleContainer{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    fill: #EFEFEF;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.10));
+    transform: translate(-23.5em,12.5em);
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  .creditoSimple {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+  }
 
 
   .footer {

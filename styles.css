@@ -966,6 +966,7 @@ h3 {
   font-weight: lighter;
   font-style: normal;
   text-align: center;
+
 }
 
 #section7 {
@@ -1988,7 +1989,8 @@ footer {
     justify-content: center;
     gap: 2em;
     padding-top: 4em;
-   
+   width: 100vw;
+   height: 100vh;
   }
 
 
@@ -2012,13 +2014,68 @@ footer {
     height: 40.625em;  
   }
 
-  .info6 {
+  h3{
+    font-size: 1.75;
+  }
 
+  .info6 {
+    padding-right: 0;
+    padding-left: 0;
+    
+  }
+
+  .info5{
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .info4 {
-    padding: 2em;
+    padding-right: 0;
+    padding-left: 2em;
+    
+   
+  
   }
+
+  .containerLateral{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+
+  .infoP {
+    color: #54535A;
+    font-family: 'AlbertSans-Light';
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: normal;
+    width: 24.3125rem;
+  }
+  
+  .pagas {
+    color: #53A490;
+    text-align: center;
+    font-family: 'AlbertSans-Bold';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .capital {
+    color: #54535A;
+    text-align: center;
+    font-family: 'AlbertSans-Bold';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+
 
   .creditoImg {
     position: relative;

@@ -657,23 +657,25 @@ header {
 }
 
 .pibContainer {
-  padding-bottom: 6em;
+ 
   position: relative;
-  padding-top: 1.2em;
+ 
+
 
 }
 
 .dots {
-  width: 20em;
-  height: 20em;
-
+  width: 28.75rem;
+  height: 28.75rem;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
 }
 
 .pib {
-  width: 17em;
-  height: 17em;
+  width: 90%;
+  height: 90%;
   position: absolute;
-  transform: translate(-19em);
+  transform: translate(-27em);
 
 }
 
@@ -1685,7 +1687,7 @@ footer {
 
     color: #28282B;
     font-family: 'AlbertSans-Bold';
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1694,7 +1696,7 @@ footer {
   .colorB {
     color: #28282B;
     font-family: 'AlbertSans-Bold';
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1703,7 +1705,7 @@ footer {
   .color {
     color: #53A490;
     font-family: 'AlbertSans-Bold';
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1715,6 +1717,7 @@ footer {
     color: #54535A;
     font-weight: lighter;
     font-family: 'AlbertSans-Light';
+    font-size: 3rem;
   }
 
 
@@ -1724,13 +1727,15 @@ footer {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    gap: 4em;
+    padding-top: 0;
 
   }
 
 
   #section4 {
 
-    width: min-content;
+    width: max-content;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -1739,6 +1744,49 @@ footer {
     overflow-x: hidden;
 
     visibility: visible;
+
+  }
+
+  .dots2 {
+    width: 28.75rem;
+    height: 28.75rem;
+    position: relative;
+  }
+  
+  .pymes {
+    width: 25.75rem;
+    height: 25.75rem;
+    position: absolute;
+    transform: translate(-27.2em);
+  }
+
+
+  .info2 {
+    font-size: 3rem;
+    font-style: normal;
+    line-height: normal;
+    text-align: justify;
+    width: 37rem;
+  }
+
+  .info2 p{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .color2{
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  
+  .greenColor{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .fuente {
+   
+    font-size: 0.75rem;
 
   }
 
@@ -2045,27 +2093,7 @@ footer {
   }
 
 
-  .flecha {
-    position: relative;
-    top: 30%;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid gray;
-    animation: moveArrow 2s infinite linear;
-  }
-
-  @keyframes moveArrow {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(-100px);
-    }
-  }
+ 
 
   #hideButtom {
     display: flex;

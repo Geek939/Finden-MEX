@@ -43,7 +43,7 @@ body{
   
   height: 100vh;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   left: 0;
 }
@@ -71,16 +71,18 @@ body{
   background-size: cover;
   background-position: center center;
   transform: scale(1);
+  
 }
 
 
 .shade {
   opacity: 0;
   background: white;
-  z-index: 3;
+  z-index: 2;
   height: 100%;
   position: fixed;
   width: 100%;
+  pointer-events: none;
 }
 
 .title {
@@ -186,7 +188,7 @@ h1 {
   justify-content: center;
   width: 100%;
   position: relative;
-  
+  z-index: 3;
   padding-bottom: 2rem;
   overflow: hidden;
 }
@@ -714,7 +716,8 @@ header {
   align-items: center;
   top: 0;
   padding-bottom: 5em;
-  
+  position: relative;
+  z-index: 3;
  
 
 
@@ -892,6 +895,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 3;
 
 }
 
@@ -975,6 +980,8 @@ transform: translate(-0.1em, 2em);
  padding-top: 5em;
   padding-bottom: 8em;
   top: 0;
+  position: relative;
+  z-index: 3;
 }
 
 
@@ -1077,6 +1084,8 @@ text-decoration-line: underline;
   background: linear-gradient(#28282B, #1A1A1C);
   max-height: 100%;
   overflow-y: hidden;
+  position: relative;
+  z-index: 3;
   
 }
 
@@ -1284,6 +1293,8 @@ footer {
 .App{
   top: 0;
   background: white;
+  position: relative;
+  z-index: 3;
 }
 
 .imgcontainer {
@@ -1699,6 +1710,8 @@ footer {
     width: 200%;
     height: 100vh;
     scroll-behavior: smooth;  
+    position: relative;
+    z-index: 3;
   }
   .scrollable-section2 {
     flex: 0 0 100vw;

@@ -25,22 +25,22 @@ html {
   box-sizing: border-box;
 }
 
-section{
+section {
   overflow: hidden;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
 
 /* EFECTO COVER ##################################*/
-.scrollable-section{
+.scrollable-section {
   display: none;
 }
 
 .hero-effects {
-  
+
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -71,7 +71,7 @@ body{
   background-size: cover;
   background-position: center center;
   transform: scale(1);
-  
+
 }
 
 
@@ -102,6 +102,7 @@ body{
   padding: 4em;
   text-align: center;
   margin-bottom: 50%;
+  gap: 2em;
 }
 
 .contentText {
@@ -152,30 +153,26 @@ body{
 
 /* Your custom styles for h1 and p go here */
 h1 {
-
-  color: #53A490;
-  text-align: center;
-  font-family: 'AlbertSans-Bold';
-  font-size: 1.884rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
+color: #53A490;
+text-align: center;
+font-family: 'AlbertSans-Bold';
+font-size: 2.75rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 
-.text p {
-
-  color: #28282B;
-  font-family: 'AlbertSans-Bold';
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  font-size: 1.253rem;
-
+.text p { 
+color: #28282B;   
+font-family: 'AlbertSans-Bold';
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
-.section-2{
+.section-2 {
   top: 0;
 
 }
@@ -236,7 +233,7 @@ header {
 }
 
 .creditosBt {
- 
+
   color: #28282B;
   text-align: center;
   font-family: 'AlbertSans-Light';
@@ -256,22 +253,22 @@ header {
 
 .subrayado {
   position: absolute;
-  bottom: -0.5em; 
+  bottom: -0.5em;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #53A490; 
-  transition: width 0.3s ease-in-out; 
+  background-color: #53A490;
+  transition: width 0.3s ease-in-out;
 }
 
 
 .creditosBt:hover .subrayado {
-  width: 100%; 
+  width: 100%;
 }
 
 /* Boton superior: "Cuentanos de tu empresa" */
 
-#hideButtom{
+#hideButtom {
   display: none;
 }
 
@@ -319,6 +316,73 @@ header {
   fill: #FFF;
 }
 
+.footerBottom {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.25rem;
+  background: #53A490;
+  width: 14.375rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+}
+
+.footerBottom a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 50px);
+  height: 100%;
+  text-decoration: none;
+
+  color: #FFF;
+  text-align: right;
+  font-family: "AlbertSans-ligth";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+}
+
+.textButton2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+  color: #FFF;
+  text-align: right;
+  font-family: "AlbertSans-ligth";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+}
+
+.footerBottom a:hover .textButton2:first-child {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.footerBottom a:hover .textButton2:last-child {
+  transform: translateY(0);
+}
+
+.textButton2:last-child {
+  transform: translateY(100%);
+}
+
+
+
 /* CTA ANCLADO  */
 
 
@@ -329,12 +393,12 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  
+
   padding: 1.5em;
   width: 369px;
   height: 371px;
-  
-  
+
+
 
 }
 
@@ -542,7 +606,7 @@ header {
   top: 2263px;
   left: 30px;
 
- 
+
 }
 
 .info p {
@@ -568,11 +632,11 @@ header {
   font-family: 'AlbertSans-Bold';
   font-size: 2.125rem;
   font-style: normal;
-  font-weight: 700; 
+  font-weight: 700;
   line-height: normal;
 }
 
-.colorDegrade{
+.colorDegrade {
   color: #53A490;
   font-family: 'AlbertSans-Light';
   font-size: 2.125rem;
@@ -601,7 +665,7 @@ header {
 .dots {
   width: 20em;
   height: 20em;
- 
+
 }
 
 .pib {
@@ -729,13 +793,13 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2.5em;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   top: 0;
   padding-bottom: 5em;
   position: relative;
   z-index: 3;
- 
+
 
 
 }
@@ -759,7 +823,7 @@ header {
 
 .boldBlack {
   color: #28282B;
-  
+
   font-family: 'AlbertSans-Bold';
   font-style: normal;
   font-weight: 700;
@@ -773,7 +837,7 @@ header {
   font-style: normal;
   font-weight: lighter;
   line-height: normal;
-  
+
 }
 
 .containerEmpresa {
@@ -797,7 +861,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-overflow: auto;
+  overflow: auto;
 }
 
 
@@ -919,8 +983,8 @@ h3 {
 
 .info7 {
 
-font-size: 1.75rem;
-text-align: center;
+  font-size: 1.75rem;
+  text-align: center;
 }
 
 .container7 {
@@ -940,7 +1004,7 @@ text-align: center;
 
   font-weight: lighter;
   font-style: normal;
- 
+
 }
 
 .pagas3 {
@@ -968,11 +1032,11 @@ text-align: center;
 }
 
 .dots3 {
-  width:90%;
-height: 90%;
-flex-shrink: 0;
+  width: 90%;
+  height: 90%;
+  flex-shrink: 0;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%); 
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%);
 }
 
 .finloop {
@@ -980,21 +1044,22 @@ flex-shrink: 0;
   height: 100%;
   flex-shrink: 0;
   position: absolute;
-  bottom: -100%; /* Inicialmente fuera de la vista */
+  bottom: -100%;
+  /* Inicialmente fuera de la vista */
   transition: bottom 1s ease, clip-path 1s ease;
-transform: translate(-0.1em, 2em);
+  transform: translate(-0.1em, 2em);
 }
 
 .finloop.active {
   bottom: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 65%); 
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 65%);
 }
 
 
 #section8 {
   background: #EFEFEF;
- margin-top: -5em;
- padding-top: 5em;
+  margin-top: -5em;
+  padding-top: 5em;
   padding-bottom: 8em;
   top: 0;
   position: relative;
@@ -1010,7 +1075,7 @@ h4 {
   font-weight: 700;
   line-height: normal;
   text-align: center;
- 
+
   padding-bottom: 4rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 2.625rem;
@@ -1026,7 +1091,7 @@ h4 {
 }
 
 .info8 {
-  
+
   line-height: normal;
   text-align: center;
 
@@ -1048,17 +1113,17 @@ h4 {
   font-family: 'AlbertSans-light';
   font-style: normal;
   font-weight: lighter;
-  
+
 }
 
 .formulario {
-font-family: 'AlbertSans-light';
-color: #53A490;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 300;
-line-height: 140%;
-text-decoration-line: underline;
+  font-family: 'AlbertSans-light';
+  color: #53A490;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  text-decoration-line: underline;
 }
 
 .container8 {
@@ -1070,7 +1135,7 @@ text-decoration-line: underline;
   z-index: 3;
 }
 
-.containerRelative{
+.containerRelative {
   width: 18.3125rem;
   height: 21.25rem;
   flex-shrink: 0;
@@ -1104,12 +1169,12 @@ text-decoration-line: underline;
   overflow-y: hidden;
   position: relative;
   z-index: 3;
-  
+
 }
 
 #section9 .formAnclado {
   display: none;
-  overflow:auto;
+  overflow: auto;
 }
 
 .sectionContainer9 {
@@ -1120,7 +1185,7 @@ text-decoration-line: underline;
   padding-top: 5em;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .bgFooter {
@@ -1240,7 +1305,7 @@ footer {
 }
 
 
-.App{
+.App {
   top: 0;
   background: white;
   position: relative;
@@ -1266,7 +1331,7 @@ footer {
   height: 12rem;
   object-fit: cover;
   transform-origin: left;
-  
+
 
 }
 
@@ -1279,22 +1344,22 @@ footer {
   overflow: hidden;
 }
 
-.creditoImg2{
+.creditoImg2 {
   display: none;
 }
 
-.creditoSimple{
+.creditoSimple {
   display: none;
 }
 
-.conntainerA{
+.conntainerA {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.financiera2{
+.financiera2 {
   display: none;
 }
 
@@ -1307,12 +1372,12 @@ footer {
   }
 
   .text {
-    
+
     width: 5%;
-   
+
   }
 
-  .section-1{
+  .section-1 {
     height: 100vh;
     width: 100vw;
   }
@@ -1327,15 +1392,15 @@ footer {
     flex-shrink: 0;
 
 
+    
+
   }
 
   .textImg2 {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 131px;
-    height: 40px;
+    width: 10.23438rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+ 
 
   }
 
@@ -1404,7 +1469,7 @@ footer {
   }
 
   .subrayado {
-    bottom: -1.3em; 
+    bottom: -1.3em;
   }
 
   .formLink {
@@ -1593,7 +1658,7 @@ footer {
     text-align: justify;
     width: 555px;
     height: 232px;
-    
+
   }
 
   .info p {
@@ -1639,22 +1704,22 @@ footer {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-  
+
   }
 
 
   #section4 {
- 
-    width: min-content;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  overflow-x:hidden ;
 
-  visibility: visible;
- 
+    width: min-content;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+    visibility: visible;
+
   }
 
   .horizontal-scroll {
@@ -1663,91 +1728,92 @@ footer {
     overflow-y: hidden;
     width: 200%;
     height: 100vh;
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth;
     position: relative;
     z-index: 3;
   }
+
   .scrollable-section2 {
     flex: 0 0 100vw;
-    transition: transform 0.5s ease-out;  
+    transition: transform 0.5s ease-out;
   }
 
-  
- 
-  
-  
- 
-html,
-body {
 
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  
-}
 
- 
 
-  
+
+
+  html,
+  body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+  }
+
+
+
+
   .info3 {
     margin-top: 1em;
     font-size: 2.5rem;
-    width:20em;
+    width: 20em;
     text-align: center;
     padding-left: 2em;
     padding-right: 2em;
   }
-  
 
 
 
-.containerEmpresa{
-  width: 30rem;
-  height: 19rem;
-flex-shrink: 0;
-}
 
-#section5 {
-  
- padding-top:10em;
+  .containerEmpresa {
+    width: 30rem;
+    height: 19rem;
+    flex-shrink: 0;
+  }
 
+  #section5 {
 
-}
+    padding-top: 10em;
 
 
-
-.linea-verde2 {
-  position: relative;
-  width: 100%;
-  height: 2.5px;
-  background-color: transparent;
-  overflow: hidden;
-}
-
-.linea-verde2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 2.5px;
-  background-color: #53A490;
-  ;
-  animation: crecimiento 5s linear infinite;
-}
-
-.linea-verde2:hover::before {
-  animation: none;
-  width: 100%;
-}
+  }
 
 
 
-.linea-verde2 {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
+  .linea-verde2 {
+    position: relative;
+    width: 100%;
+    height: 2.5px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .linea-verde2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: #53A490;
+    ;
+    animation: crecimiento 5s linear infinite;
+  }
+
+  .linea-verde2:hover::before {
+    animation: none;
+    width: 100%;
+  }
+
+
+
+  .linea-verde2 {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
 
 
 
@@ -1757,26 +1823,26 @@ flex-shrink: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  
+
   }
 
 
-  .info8{
-    
+  .info8 {
+
     text-align: left;
     line-height: normal;
     width: min-content;
     width: 27rem;
   }
 
-  h4{
+  h4 {
     padding-bottom: 1em;
     font-size: 2rem;
     text-align: left;
     width: 19rem;
   }
 
-  .h4Green{
+  .h4Green {
     font-size: 2.3rem;
   }
 
@@ -1787,16 +1853,16 @@ flex-shrink: 0;
     flex-shrink: 0;
     margin-top: 4em;
     position: relative;
-  
+
   }
-  
+
   .iconFinden {
     width: 4.2em;
     height: 7.2em;
     flex-shrink: 0;
     position: absolute;
     transform: translate(-3em, 19em);
-  
+
   }
 
   .black {
@@ -1816,243 +1882,249 @@ flex-shrink: 0;
   .pagas3 {
 
     font-size: 1.5rem;
- 
+
   }
 
-.bgFooter2 {
-
-  
-  transform: translate(26.5em, 2em);
+  .bgFooter2 {
 
 
-}
+    transform: translate(26.5em, 2em);
 
 
-#section7{
-  overflow-y:hidden ;
-}
-
-#section8{
-  overflow-y: hidden;
- margin-top: -5em;
-}
-
-h2{
-  text-align: center;
-  font-family: 'AlbertSans-Bold';
-  font-size: 3.375em;
-  font-weight: 700;
-  line-height: 65px;
-  letter-spacing: 0em;
- 
-
-}
+  }
 
 
+  #section7 {
+    overflow-y: hidden;
+  }
 
-/*#######  */
-.imgcontainer {
+  #section8 {
+    overflow-y: hidden;
+    margin-top: -5em;
+  }
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  justify-content: center;
-  gap: 2em;
-  padding-left: 4em;
-}
+  h2 {
+    text-align: center;
+    font-family: 'AlbertSans-Bold';
+    font-size: 3.375em;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0em;
+
+
+  }
 
 
 
+  /*#######  */
+  .imgcontainer {
 
-.imgcontainer img {
-  width: 19em;
-  height: 13em;
-  object-fit: cover;
-  transform-origin: left;
-  background: white;
-  position: relative;
-}
-
-.reveal {
-  visibility: hidden;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center; 
-  display: flex;
-}
-
-.info6{
-  padding-left: 5em;
-}
-
-.info4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    gap: 2em;
+    padding-left: 4em;
+  }
 
 
-}
 
 
-.creditoImg2{
-  
-}
+  .imgcontainer img {
+    width: 19em;
+    height: 13em;
+    object-fit: cover;
+    transform-origin: left;
+    background: white;
+    position: relative;
+  }
 
-.creditoSimple{
+  .reveal {
+    visibility: hidden;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 
-}
+  .info6 {
+    padding-left: 5em;
+  }
 
-
-.footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.financiera{
-  display: none;
-}
-
-.financiera2{
-position: absolute;
-display: flex;
-bottom: 1%;
-right: 40%;
-}
-
-.linksContainer{
-  display: flex;
- padding-left: 2rem;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding-top: 10rem;
-  gap: 10rem;
- 
-  
-}
+  .info4 {}
 
 
-footer{
-  display: none;
-}
+  .creditoImg2 {}
 
-.footerEnd{
-  color: #FFF;
-  font-family: 'AlbertSans-light';
-  font-size: 0.5625rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-align: left;
-  padding-top: 1.5em;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
-.goplek {
- 
-  padding-bottom: 0em;
-  padding-left: 22em;
-}
-
-.containerA{
-display: flex;
-gap: 1rem;
-}
-
-#section9{
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
+  .creditoSimple {}
 
 
-.flecha {
-  position: relative;
-  top: 30%;
-  z-index: 1;
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid gray;
-  animation: moveArrow 2s infinite linear;
-}
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-@keyframes moveArrow {
-  0% {
+  .financiera {
+    display: none;
+  }
+
+  .financiera2 {
+    position: absolute;
+    display: flex;
+    bottom: 1%;
+    right: 40%;
+  }
+
+  .linksContainer {
+    display: flex;
+    padding-left: 2rem;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 10rem;
+    gap: 10rem;
+
+
+  }
+
+
+  footer {
+    display: none;
+  }
+
+  .footerEnd {
+    color: #FFF;
+    font-family: 'AlbertSans-light';
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+    padding-top: 1.5em;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+  }
+
+  .goplek {
+
+    padding-bottom: 0em;
+    padding-left: 22em;
+  }
+
+  .containerA {
+    display: flex;
+    gap: 1rem;
+  }
+
+  #section9 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+
+
+  .flecha {
+    position: relative;
+    top: 30%;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid gray;
+    animation: moveArrow 2s infinite linear;
+  }
+
+  @keyframes moveArrow {
+    0% {
       transform: translateX(0);
-  }
-  100% {
+    }
+
+    100% {
       transform: translateX(-100px);
+    }
   }
-}
 
-.footerBottom {
+  #hideButtom {
+    display: flex;
+  }
+
+
+  .footerBottom {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    background: #53A490;
+    width: 14.375rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+  }
+
+  .footerBottom a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 50px);
+    height: 100%;
+    text-decoration: none;
+
+    color: #FFF;
+    text-align: right;
+    font-family: "AlbertSans-ligth";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+  }
+
+  .textButton2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+    color: #FFF;
+    text-align: right;
+    font-family: "AlbertSans-ligth";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+  }
+
+  .footerBottom a:hover .textButton2:first-child {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .footerBottom a:hover .textButton2:last-child {
+    transform: translateY(0);
+  }
+
+  .textButton2:last-child {
+    transform: translateY(100%);
+  }
+
+  .formAncladoArrow2 {
+    width: 1.16531rem;
+    height: 0.98188rem;
+    flex-shrink: 0;
+    fill: #FFF;
+    position: relative;
  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  border: none;
-  cursor: pointer;
-  border-radius: 1.25rem;
-  background: #53A490;
-  width: 14.375rem;
-  height: 2.5rem;
-  flex-shrink: 0;
-}
-
-.footerBottom a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  width: calc(100% - 50px); 
-  height: 100%;
-  text-decoration: none;
-
-  color: #FFF;
-text-align: right;
-font-family: "AlbertSans-ligth";
-font-size: 0.875rem;
-font-style: normal;
-font-weight: bolder;
-line-height: normal;
-}
-
-.textButton2 {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  opacity: 1;
-  color: #FFF;
-  text-align: right;
-  font-family: "AlbertSans-ligth";
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight:bolder;
-  line-height: normal;
-}
-
-.footerBottom a:hover .textButton2:first-child {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.footerBottom a:hover .textButton2:last-child {
-  transform: translateY(0);
-}
-
-.textButton2:last-child {
-  transform: translateY(100%);
-}
-
-
-
+  }
+ 
 
 }

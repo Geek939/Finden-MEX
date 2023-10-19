@@ -153,23 +153,23 @@ body {
 
 /* Your custom styles for h1 and p go here */
 h1 {
-color: #53A490;
-text-align: center;
-font-family: 'AlbertSans-Bold';
-font-size: 2.75rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #53A490;
+  text-align: center;
+  font-family: 'AlbertSans-Bold';
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 
-.text p { 
-color: #28282B;   
-font-family: 'AlbertSans-Bold';
-font-size: 1.875rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.text p {
+  color: #28282B;
+  font-family: 'AlbertSans-Bold';
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .section-2 {
@@ -593,7 +593,8 @@ header {
   justify-content: center;
   gap: 2em;
   padding-top: 9em;
-
+  position: relative;
+  z-index: 3;
 }
 
 
@@ -698,6 +699,8 @@ header {
   gap: 2rem;
   padding-bottom: 6rem;
   top: 0;
+  position: relative;
+  z-index: 3;
 }
 
 .fadeTop {
@@ -1392,7 +1395,7 @@ footer {
     flex-shrink: 0;
 
 
-    
+
 
   }
 
@@ -1400,7 +1403,7 @@ footer {
     width: 10.23438rem;
     height: 3.125rem;
     flex-shrink: 0;
- 
+
 
   }
 
@@ -1540,14 +1543,19 @@ footer {
   }
 
   .childContainer2 {
-    position: absolute;
+    position: relative;
     background-color: white;
     width: 2.7em;
     height: 2.7em;
     border-radius: 50%;
-    transform: translate(16.6em, -1.2em);
+    transform: translate(9em, -1.4em);
   }
 
+  .img2Child{
+    position: absolute;
+     top: -5.1em;
+   
+  }
 
   .img3 {
     width: 10em;
@@ -1556,16 +1564,19 @@ footer {
   }
 
   .chilContainer3 {
-    position: absolute;
+    position: relative;
     background-color: white;
     width: 4em;
     height: 4em;
     flex-shrink: 0;
     border-radius: 50%;
-    transform: translate(-7em, 0.5em);
+    transform: translate(-1em, 2em);
   }
 
-
+  .img3Child{
+    position: absolute;
+    bottom: -3.7em;
+  }
 
 
   /*Imagenes para efecto revelado*/
@@ -1573,7 +1584,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 5%;
+
     margin-right: 5%;
   }
 
@@ -1588,6 +1599,9 @@ footer {
     margin: 2px;
     opacity: 0;
     transition: opacity 0.5s;
+    width: 12.375rem;
+    height: 12.375rem;
+
   }
 
   .imgRevealed img.in-viewport {
@@ -1607,17 +1621,19 @@ footer {
 
     height: 10.625em;
     position: relative;
+    bottom: -2em;
 
 
   }
 
 
   .imgRevealed>div:nth-child(2)>img.img2 {
-    position: absolute;
+    position: relative;
 
-    transform: translate(10em);
+    transform: translate(12.5em);
   }
 
+ 
 
   .content {
     background-color: white;
@@ -1628,28 +1644,32 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    
 
   }
 
   .description {
     color: #28282B;
     font-family: 'AlbertSans-Bold';
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     align-items: center;
+    padding: 0;
     line-height: normal;
+    
+   
   }
 
   .descriptionContent {
     top: 0;
-    align-items: center;
+   
     width: 34.6875em;
-    padding-left: 5em;
+    height: max-content;
+
   }
 
 
   .description span {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 
   }
 
@@ -2123,8 +2143,8 @@ footer {
     flex-shrink: 0;
     fill: #FFF;
     position: relative;
- 
+
   }
- 
+
 
 }

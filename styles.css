@@ -236,7 +236,7 @@ header {
 }
 
 .creditosBt {
-  /*modificar version Pantallas grandes */
+ 
   color: #28282B;
   text-align: center;
   font-family: 'AlbertSans-Light';
@@ -250,8 +250,23 @@ header {
   letter-spacing: 0em;
   text-decoration: none;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.subrayado {
+  position: absolute;
+  bottom: -0.5em; 
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #53A490; 
+  transition: width 0.3s ease-in-out; 
+}
 
 
+.creditosBt:hover .subrayado {
+  width: 100%; 
 }
 
 /* Boton superior: "Cuentanos de tu empresa" */
@@ -1049,7 +1064,8 @@ text-decoration-line: underline;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  position: relative;
+  z-index: 3;
 }
 
 .containerRelative{
@@ -1451,6 +1467,10 @@ footer {
     line-height: 1.1875rem;
     letter-spacing: 0em;
     padding-top: 1rem;
+  }
+
+  .subrayado {
+    bottom: -1.3em; 
   }
 
   .formLink {

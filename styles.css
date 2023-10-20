@@ -1987,7 +1987,7 @@ footer {
     align-items: center;
     position: relative;
     justify-content: center;
-    gap: 2em;
+
     padding-top: 4em;
    width: 100vw;
    height: 100vh;
@@ -2016,25 +2016,28 @@ footer {
 
   h3{
     font-size: 1.75;
+    text-align: start;
+    white-space: nowrap;
   }
 
   .info6 {
     padding-right: 0;
-    padding-left: 0;
+    padding-left: 6em;
+    position: relative;
+    bottom: -15em;
+    
     
   }
 
   .info5{
-    padding-left: 0;
+    padding-left: 6em;
     padding-right: 0;
   }
 
   .info4 {
-    padding-right: 0;
-    padding-left: 2em;
-    
-   
-  
+    position: relative;
+    top: -13em;
+    padding-left: 6em;
   }
 
   .containerLateral{
@@ -2043,7 +2046,10 @@ footer {
     align-items: center;
     justify-content: center;
     
+    
   }
+
+
   
 
   .infoP {
@@ -2053,6 +2059,7 @@ footer {
     font-weight: 300;
     font-style: normal;
     width: 24.3125rem;
+    text-align: start;
   }
   
   .pagas {

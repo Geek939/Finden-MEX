@@ -2024,7 +2024,8 @@ footer {
     padding-right: 0;
     padding-left: 6em;
     position: relative;
-    bottom: -15em;
+    bottom: -10em;
+    
     
     
   }
@@ -2044,7 +2045,7 @@ footer {
     display: flex;
     gap:1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     
     
   }

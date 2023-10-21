@@ -1232,7 +1232,7 @@ h4 {
   gap: 1em;
   justify-content: center;
   align-items: center;
-  padding-top: 3em;
+  padding-bottom: 3%;
   flex-direction: column;
 }
 
@@ -2184,6 +2184,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 45em;
   }
 
   .financiera {
@@ -2203,10 +2204,8 @@ footer {
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
-    padding-top: 10rem;
+    padding-top: 30%;
     gap: 10rem;
-
-
   }
 
 

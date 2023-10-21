@@ -591,6 +591,7 @@ header {
   justify-content: center;
   gap: 2em;
   padding-top: 9em;
+  padding-bottom: 3em;
   position: relative;
   z-index: 3;
 }
@@ -598,12 +599,7 @@ header {
 
 .info {
   background-color: white;
-
-
-  width: 370px;
-  height: 164px;
-  top: 2263px;
-  left: 30px;
+  width: 23.125rem;
 
 
 }
@@ -616,6 +612,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  
 }
 
 .colorB {
@@ -663,17 +660,18 @@ header {
 }
 
 .dots {
-  width: 28.75rem;
-  height: 28.75rem;
-  transform: rotate(-90deg);
-  flex-shrink: 0;
+  width: 20em;
+  height: 20em;
+transform: rotate(-90deg);
+flex-shrink: 0;
 }
 
 .pib {
-  width: 90%;
-  height: 90%;
+  width: 20.875rem;
+  height: 15rem;
+  flex-shrink: 0;
   position: absolute;
-  transform: translate(-27em);
+  transform: translate(-21em, 2em);
 
 }
 
@@ -691,7 +689,7 @@ header {
 #section4 {
   background-color: #28282B;
   width: 100%;
-  padding-top: 9rem;
+  padding-top: 7.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1751,6 +1749,23 @@ footer {
   }
 
 
+  .dots {
+    width: 28.75rem;
+    height: 28.75rem;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+  }
+
+
+.pib {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  transform: translate(-27em);
+
+}
+  
+
   #section4 {
 
     width: max-content;
@@ -1764,6 +1779,7 @@ footer {
     visibility: visible;
 
   }
+
 
   .dots2 {
     width: 28.75rem;

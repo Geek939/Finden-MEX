@@ -224,9 +224,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /* Alinea los elementos a la derecha */
   align-items: flex-start;
-  /* Alinea los elementos hacia arriba */
   padding: 1.25rem;
   z-index: 3;
   position: relative;
@@ -2074,6 +2072,25 @@ footer {
     gap:1rem;
     align-items: center;
     justify-content: start; 
+  }
+
+  .header2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1.25rem;
+    z-index: 3;
+    position: relative;
+    background-color: white;
+  }
+
+  .headerLogo{
+    width: 13.82206rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    left: 1%;
+    position: absolute;
   }
 
   .infoP {

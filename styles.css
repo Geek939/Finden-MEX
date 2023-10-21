@@ -2200,12 +2200,12 @@ footer {
 
   .linksContainer {
     display: flex;
-    padding-left: 2rem;
+    padding-left: 4%;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
     padding-top: 30%;
-    gap: 10rem;
+    gap: 30rem;
   }
 
 
@@ -2223,7 +2223,7 @@ footer {
     text-align: left;
     padding-top: 1.5em;
     padding-bottom: 2rem;
-    padding-left: 2rem;
+    padding-left: 4%;
   }
 
   .goplek {

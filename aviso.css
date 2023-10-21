@@ -41,6 +41,7 @@ body {
     justify-content: space-around;
     padding-top: 2em;
     height: 4.375rem;   
+   
 }
 
 .navSection6 img{
@@ -113,6 +114,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    
 }
 
 .legal {
@@ -177,10 +179,12 @@ h1 {
 
 .footerContainer {
 
-    background: linear-gradient(#28282B, #1A1A1C);
-    position: relative;
-    width: 100vw;
-    overflow: hidden;
+    top: 0;
+  background: linear-gradient(#28282B, #1A1A1C);
+  max-height: 100%;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 3;
  
 }
 
@@ -217,13 +221,27 @@ h1 {
         flex-shrink: 0;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-top: 2em;
         height: 2.875rem;  
         padding-bottom: 5em;
-
+        height: 6.875rem;
+        padding-left: 2%;
+        padding-right: 2%;
         }
         
+        h1{
+            padding-top: 3em;
+            width: 334px;
+            color: #28282B;
+            font-family: 'AlbertSans-Bold';
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            position: relative;
+            left: 15%;
+        }
     
 
 
@@ -278,4 +296,38 @@ h1 {
        color: black;
        text-align: center;
       }
+
+      .texto{
+        position: relative;
+        left: 12%;
+        width: 63.375rem;
+        align-items: flex-start;
+      }
+
+      .legal {
+        align-items: flex-start;
+    }
+
+    .leyendas {
+        
+        align-items: flex-start;
+    }
+
+    
+.creditLink {
+    color: #28282B;
+    text-align: center;
+    font-family: 'AlbertSans-Light';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.footerContainer {
+   height: 100vh; 
+    width: 100vw;
+    position: relative;
+}
 }

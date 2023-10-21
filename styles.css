@@ -1363,6 +1363,31 @@ footer {
   display: none;
 }
 
+#tab1, #tab2, #tab3 {
+  position: sticky;
+  top: 0;
+  /* Otros estilos necesarios */
+}
+
+
+.tab {
+  /* tus otros estilos */
+  
+  /* Agrega transparencia */
+  opacity: 0.5; /* El valor puede estar entre 0 (completamente transparente) y 1 (completamente opaco) */
+  background-color: #ffffff; /* O cualquier color que estés usando */
+  
+  /* Asegúrate de que los elementos no sean completamente opacos cuando se desplazan unos sobre otros */
+  position: relative;
+  z-index: 1;
+}
+
+/* Puedes agregar un estilo para cuando el tab esté activo o se le pase el mouse por encima (hover) para hacerlo completamente opaco */
+.tab:hover,
+.tab.active {
+  opacity: 1;
+}
+
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
   /* para dispositivos grandes */
@@ -1989,11 +2014,17 @@ footer {
     justify-content: center;
     overflow: hidden;
     padding-top: 4em;
-   width: 100vw;
-   height: 100vh;
+    width: 100vw;
+    height: 100vh;
   }
 
 
+  .finloopLateral{
+  
+    right: 0;
+    bottom: -22em;    
+
+  }
 
 
   .imgcontainer img {
@@ -2024,10 +2055,7 @@ footer {
     padding-right: 0;
     padding-left: 6em;
     position: relative;
-    bottom: -10em;
-    
-    
-    
+    bottom: -10em; 
   }
 
   .info5{
@@ -2045,13 +2073,8 @@ footer {
     display: flex;
     gap:1rem;
     align-items: center;
-    justify-content: start;
-    
-    
+    justify-content: start; 
   }
-
-
-  
 
   .infoP {
     color: #54535A;
@@ -2083,8 +2106,6 @@ footer {
     line-height: normal;
   }
   
-
-
   .creditoImg {
     position: relative;
     width: 46.375em;

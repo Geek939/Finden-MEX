@@ -870,6 +870,8 @@ h2 {
   font-weight: 700;
   line-height: normal;
   text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
 
 }
 
@@ -1204,10 +1206,9 @@ h4 {
 
 
 .financiera {
-  width: 115px;
-  height: 35px;
-
-
+  width: 7.1875rem;
+  height: 2.1875rem;
+  flex-shrink: 0;
 }
 
 .footerImg {
@@ -1227,11 +1228,12 @@ h4 {
 .linksContainer {
 
   display: flex;
-  gap: 1em;
+  gap: 3em;
   justify-content: center;
   align-items: center;
   padding-bottom: 3%;
   flex-direction: column;
+  padding-top: 3.5em;
 }
 
 footer {
@@ -1311,9 +1313,25 @@ footer {
 
 }
 
-.imgcontainer {
+.header2, .finloopLateral, .finloopLateral2, .creditoImg2, .creditoSimple{
+  display: none;
+}
 
-  padding-bottom: 3em;
+.containerLateral img{
+  display: none;
+}
+
+#tab2 h2{
+  display: none;
+}
+
+#tab3 h2{
+  display: none;
+}
+
+.imgcontainer {
+  padding-top: 3em;
+  padding-bottom: 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1344,6 +1362,10 @@ footer {
   height: 100%;
   max-width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 
@@ -1359,30 +1381,7 @@ footer {
   display: none;
 }
 
-#tab1, #tab2, #tab3 {
-  position: sticky;
-  top: 0;
-  /* Otros estilos necesarios */
-}
 
-
-.tab {
-  /* tus otros estilos */
-  
-  /* Agrega transparencia */
-  opacity: 0.5; /* El valor puede estar entre 0 (completamente transparente) y 1 (completamente opaco) */
-  background-color: #ffffff; /* O cualquier color que estés usando */
-  
-  /* Asegúrate de que los elementos no sean completamente opacos cuando se desplazan unos sobre otros */
-  position: relative;
-  z-index: 1;
-}
-
-/* Puedes agregar un estilo para cuando el tab esté activo o se le pase el mouse por encima (hover) para hacerlo completamente opaco */
-.tab:hover,
-.tab.active {
-  opacity: 1;
-}
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
@@ -1597,7 +1596,7 @@ footer {
   }
 
 
-  /*Imagenes para efecto revelado*/
+
   .imgRevealed {
     display: flex;
     flex-direction: column;
@@ -2019,6 +2018,29 @@ footer {
 
 
   /*#######  */
+  #tab1, #tab2, #tab3 {
+    position: sticky;
+    top: 0;
+    /* Otros estilos necesarios */
+  }
+  
+  
+  .tab {
+    
+    opacity: 0.5; 
+    background-color: #ffffff; 
+    
+   
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .tab:hover,
+  .tab.active {
+    opacity: 1;
+  }
+
   .imgcontainer {
   
     display: flex;

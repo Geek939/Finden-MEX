@@ -364,6 +364,7 @@ header {
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
+  white-space: nowrap; 
 }
 
 .footerBottom a:hover .textButton2:first-child {
@@ -1311,7 +1312,7 @@ footer {
 
 }
 
-.header2, .finloopLateral, .finloopLateral2, .creditoImg2, .creditoSimple{
+.header2{
   display: none;
 }
 

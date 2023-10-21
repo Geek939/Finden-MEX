@@ -872,7 +872,7 @@ h2 {
   font-weight: 700;
   line-height: normal;
   text-align: center;
-  padding-top: 8rem;
+
 }
 
 h3 {
@@ -1862,7 +1862,7 @@ footer {
   #section5 {
 
     padding-top: 10em;
-
+   margin-bottom: 10em;
 
   }
 
@@ -2018,10 +2018,13 @@ footer {
 
 
   .finloopLateral{
-  
     right: 0;
-    bottom: -22em;    
+    bottom: -12em;    
+  }
 
+  .finloopLateral2{
+    right: 0;
+    bottom: -20em;    
   }
 
 
@@ -2089,7 +2092,7 @@ footer {
     width: 13.82206rem;
     height: 3.125rem;
     flex-shrink: 0;
-    left: 1%;
+    left: 4%;
     position: absolute;
   }
 

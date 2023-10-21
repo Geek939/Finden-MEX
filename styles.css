@@ -1380,7 +1380,13 @@ footer {
   display: none;
 }
 
+.creditoImg2{
+  display: none;
+}
 
+.creditoSimple{
+  display: none;
+}
 
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
@@ -2057,7 +2063,7 @@ footer {
 
   .finloopLateral{
     right: 0;
-    bottom: -12em;    
+    bottom: -10em;    
   }
 
   .finloopLateral2{
@@ -2192,7 +2198,7 @@ footer {
   }
 
   .creditoImg2 {
-    
+    display: block;
     width: 3rem;
     height: 3rem;
     flex-shrink: 0;
@@ -2215,6 +2221,7 @@ footer {
   }
 
   .creditoSimple {
+    display: block;
     width: 3rem;
     height: 3rem;
     flex-shrink: 0;

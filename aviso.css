@@ -177,16 +177,7 @@ h1 {
 
 
 
-.footerContainer {
 
-    top: 0;
-  background: linear-gradient(#28282B, #1A1A1C);
-  max-height: 100%;
-  overflow-y: hidden;
-  position: relative;
-  z-index: 3;
- 
-}
 
 
 
@@ -211,6 +202,16 @@ h1 {
     justify-content: center;
     align-items: center;
 
+}
+
+.section9{
+    
+    top: 0;
+    background: linear-gradient(#28282B, #1A1A1C);
+    max-height: 100%;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 3;
 }
 
 
@@ -327,6 +328,12 @@ h1 {
 
 .footerContainer {
    height: 100vh; 
+    width: 100vw;
+    position: relative;
+}
+
+.section9{
+    height: 100vh;
     width: 100vw;
     position: relative;
 }

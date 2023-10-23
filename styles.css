@@ -1388,6 +1388,42 @@ footer {
   display: none;
 }
 
+.finloopLateral{
+  display: none;   
+}
+
+.finloopLateral2{
+  display: none; 
+}
+
+.footerEnd {
+  color: white;
+  font-family: 'AlbertSans-light';
+  font-size: 0.5625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  padding-left: 4%;
+}
+
+
+.etiqueta {
+  position: absolute;
+  bottom: 3.6em;
+  width: 6.0625rem;
+  height: 2.1875rem;
+  flex-shrink: 0;
+  right: 0;
+
+}
+
+.footerEndEscritorio{
+display: none;
+}
+
 /*  Media Query Pantallas Grandes  */
 @media screen and (min-width: 768px) {
   /* para dispositivos grandes */
@@ -2243,7 +2279,7 @@ footer {
     position: absolute;
     display: flex;
     bottom: 1%;
-    right: 40%;
+    right: 45%;
   }
 
   .linksContainer {
@@ -2262,16 +2298,7 @@ footer {
   }
 
   .footerEnd {
-    color: #FFF;
-    font-family: 'AlbertSans-light';
-    font-size: 0.5625rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-align: left;
-    padding-top: 1.5em;
-    padding-bottom: 2rem;
-    padding-left: 4%;
+  display: none;
   }
 
   .goplek {
@@ -2372,6 +2399,29 @@ footer {
     position: relative;
 
   }
+  
+  .footerEndEscritorio{
+    display: flex;
+    color: #FFF;
+    font-family: 'AlbertSans-light';
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+    padding-top: 1.5em;
+    padding-bottom: 2rem;
+    padding-left: 4%;
+  }
 
+  .etiqueta {
+    position: absolute;
+    bottom: 1.5em;
+    width: 6.0625rem;
+    height: 2.1875rem;
+    flex-shrink: 0;
+    right: 0;
+  
+  }
 
 }
